@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<script>(function (w, i, g) { w[g] = w[g] || []; if (typeof w[g].push == 'function') w[g].push(i) })
+			(window, 'G-SEKJ4E9T4H', 'google_tags_first_party');</script>
+	<script async src="https://preview.colorlib.com/s9cc/"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() { dataLayer.push(arguments); }
+		gtag('js', new Date());
+		gtag('set', 'developer_id.dYzg1YT', true);
+		gtag('config', 'G-SEKJ4E9T4H');
+	</script>
+
+	<!-- Condigo de mudar a imagem do logotipo com scroll -->
+	<script>
+		let lastScrollY = 0;
+		let ticking = false;
+
+		window.addEventListener("scroll", function () {
+			lastScrollY = window.scrollY;
+
+			if (!ticking) {
+				window.requestAnimationFrame(function () {
+					const navbar = document.querySelector(".ftco-navbar-light");
+					const logo = document.querySelector(".navbar-brand img");
+
+					if (lastScrollY > 50) {
+						navbar.classList.add("scrolled");
+						logo.setAttribute("src", "../eroo/images/logo-pec-preto.png");
+					} else {
+						navbar.classList.remove("scrolled");
+						logo.setAttribute("src", "../eroo/images/logo-pec-dourado.png");
+					}
+
+					ticking = false;
+				});
+
+				ticking = true;
+			}
+		});
+
+	</script>
+
+	<title>PNEC - Prémio Nacional de Engenharia Civil</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<link
+		href="https://fonts.googleapis.com/css2?family=Arizonia&amp;family=Roboto:wght@300;400;500;700;900&amp;display=swap"
+		rel="stylesheet">
+
+	<link
+		href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&amp;display=swap"
+		rel="stylesheet">
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+	<link rel="stylesheet"
+		href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+
+
+	<link rel="stylesheet" href="../../../stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+	<!-- Font Awesome 6 -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+
+	<!-- Flaticon (exemplo de um pack de ícones) -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/felippe-regazio/flaticon-css/flaticon.css">
+	<link href="https://fonts.cdnfonts.com/css/noway" rel="stylesheet">
+
+
+
+	<link rel="stylesheet" href="css/animate.css">
+
+	<link rel="stylesheet" href="css/owl.carousel.min.css">
+	<link rel="stylesheet" href="css/owl.theme.default.min.css">
+	<link rel="stylesheet" href="css/magnific-popup.css">
+
+	<link rel="stylesheet" href="css/flaticon.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+	<div class="wrap">
+		<div class="container">
+			<div class="row justify-content-between">
+				<div class="col-12 col-md d-flex align-items-center">
+					<p class="mb-0 phone"><span class="mailus">Phone no:</span> <a href="#">+00 1234 567</a> or <span
+							class="mailus">email us:</span> <a href="#"><span class="__cf_email__"
+								data-cfemail="c8ada5a9a1a4bba9a5b8a4ad88ada5a9a1a4e6aba7a5">[email&#160;protected]</span></a>
+					</p>
+				</div>
+				<div class="col-12 col-md d-flex justify-content-md-end">
+					<!-- <div class="social-media">
+						<p class="mb-0 d-flex">
+							<a href="#" class="d-flex align-items-center justify-content-center"><span
+									class="fa fa-facebook"><i class="sr-only">Facebook</i></span></a>
+							<a href="#" class="d-flex align-items-center justify-content-center"><span
+									class="fa fa-twitter"><i class="sr-only">Twitter</i></span></a>
+							<a href="#" class="d-flex align-items-center justify-content-center"><span
+									class="fa fa-instagram"><i class="sr-only">Instagram</i></span></a>
+							<a href="#" class="d-flex align-items-center justify-content-center"><span
+									class="fa fa-dribbble"><i class="sr-only">Dribbble</i></span></a>
+						</p>
+					</div> -->
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+		<div class="container">
+			<a class="navbar-brand" href="index-2.html"><img src="../eroo/images/logo-pec-dourado.png" alt=""
+					width="120px"></a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav"
+				aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="oi oi-menu"></span> Menu
+			</button>
+
+			<div class="collapse navbar-collapse" id="ftco-nav">
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item"><a href="index.html" class="nav-link">Início</a></li>
+					<li class="nav-item active"><a href="sobre-nos.html" class="nav-link">Sobre</a></li>
+					<li class="nav-item"><a href="candidatos.html" class="nav-link">Candidatos</a></li>
+					<li class="nav-item"><a href="portfolio.html" class="nav-link">Portfólio</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<!-- END nav -->
+
+	<!-- Landing - page -->
+	<section class="hero-wrap">
+		<div class="home-slider owl-carousel js-fullheight">
+			<!-- Slide 1 -->
+			<div class="slider-item js-fullheight" style="background-image:url(images/bg_fundo1.jpg);">
+				<div class="overlay"></div>
+				<div class="container">
+					<div class="row d-flex no-gutters slider-text js-fullheight align-items-center align-items-stretch">
+						<div class="col-md-7 ftco-animate d-flex align-items-center">
+							<div class="text w-100 mt-5">
+								<span class="subheading">Bem-vindo ao PEC</span>
+								<h1>Prémio de Engenharia Civil</h1>
+								<p class="mb-4">Reconhecendo a excelência, a inovação e o impacto da Engenharia Civil em
+									Angola.</p>
+								<p>
+									<a href="#inscricao" class="btn btn-primary">Inscreva-se Agora</a>
+									<a href="#categorias" class="btn btn-white">Ver Categorias</a>
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- Slide 2 -->
+			<div class="slider-item js-fullheight" style="background-image:url(images/bg_person_eng1.jpg);">
+				<div class="overlay"></div>
+				<div class="container">
+					<div class="row d-flex no-gutters slider-text js-fullheight align-items-center align-items-stretch">
+						<div class="col-md-7 ftco-animate d-flex align-items-center">
+							<div class="text w-100 mt-5">
+								<span class="subheading">Categorias de Premiação</span>
+								<h1>Celebrando Profissionais e Projetos de Destaque</h1>
+								<p class="mb-4">Do Engenheiro do Ano às grandes obras de infraestrutura, o PNEC valoriza
+									quem transforma Angola através da engenharia.</p>
+								<p>
+									<a href="#categorias" class="btn btn-primary">Conheça as Categorias</a>
+									<a href="#sobre" class="btn btn-white">Saiba Mais</a>
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- Slide 3 #F19B09 -->
+			<div class="slider-item js-fullheight" style="background-image:url(images/bg_fundo2.jpg);">
+				<div class="overlay"></div>
+				<div class="container">
+					<div class="row d-flex no-gutters slider-text js-fullheight align-items-center align-items-stretch">
+						<div class="col-md-7 ftco-animate d-flex align-items-center">
+							<div class="text w-100 mt-5">
+								<span class="subheading">Cerimônia de Premiação</span>
+								<h1>Uma Momento de Reconhecimento e Inspiração</h1>
+								<p class="mb-4">Junte-se a nós na celebração dos maiores nomes e projetos da Engenharia
+									Civil em Angola.</p>
+								<p>
+									<a href="#agenda" class="btn btn-primary">Ver Agenda</a>
+									<a href="#contacto" class="btn btn-white">Entre em Contato</a>
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	<!-- Sobre o Prémio de Engenharia Civil -->
+
+	<section class="ftco-section ftco-about ftco-no-pt ftco-no-pb img">
+		<div class="container">
+			<div class="row d-flex">
+				<div class="col-md-12 about-intro">
+					<div class="row d-flex">
+						<div class="col-md-6 d-flex align-items-stretch">
+							<div class="img d-flex align-items-center align-self-stretch justify-content-center"
+								style="background-image:url(../eroo/images/mulher-olhando-estruturas.jpg);">
+							</div>
+						</div>
+						<div class="col-md-6 pl-md-5 py-5">
+							<div class="row justify-content-start pb-3 pt-md-5">
+								<div class="col-md-12 heading-section ftco-animate">
+									<span class="subheading">Prémio Engenharia</span>
+									<h2 class="mb-4">Prémio de<br>Engenharia Civil (PEC)</h2>
+									<p>
+										O PNEC reconhece e celebra a excelência na engenharia civil em Angola —
+										projetos,
+										práticas e profissionais que promovem segurança, inovação e sustentabilidade.
+										O prémio valoriza soluções que impactem positivamente as comunidades, respeitem
+										normas técnicas e incorporem boas práticas ambientais e sociais.
+									</p>
+
+									<div class="year-stablish d-flex">
+										<div class="icon2 d-flex align-items-center justify-content-center">
+											<span class="flaticon-light-bulb"></span>
+										</div>
+										<div class="text pl-4">
+											<strong class="number" data-number="15">0</strong>
+											<span>Edições<br>Realizadas</span>
+										</div>
+									</div>
+
+									<p class="mt-3">
+										Saiba mais sobre critérios de avaliação, categorias e o processo de candidatura
+										no site oficial. Profissionais, empresas e instituições são convidados a
+										submeter
+										projetos que demonstrem qualidade técnica e impacto social.
+									</p>
+
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Contadores de estatísticas -->
+
+	<section class="ftco-section ftco-counter img" id="section-counter"
+		style="background-image: url(images/bg_fundo1.jpg);">
+		<div class="overlay"></div>
+		<div class="container">
+			<div class="row">
+
+				<div class="col-md-3 d-flex counter-wrap ftco-animate">
+					<div class="block-18 d-flex align-items-center">
+						<div class="icon d-flex align-items-center justify-content-center">
+							<span class="flaticon-file"></span>
+						</div>
+						<div class="text pl-3">
+							<strong class="number" data-number="250">0</strong>
+							<span>Projetos<br>Inscritos</span>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-md-3 d-flex counter-wrap ftco-animate">
+					<div class="block-18 d-flex align-items-center">
+						<div class="icon d-flex align-items-center justify-content-center">
+							<span class="flaticon-engineer"></span>
+						</div>
+						<div class="text pl-3">
+							<strong class="number" data-number="80">0</strong>
+							<span>Profissionais<br>Premiados</span>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-md-3 d-flex counter-wrap ftco-animate">
+					<div class="block-18 d-flex align-items-center">
+						<div class="icon d-flex align-items-center justify-content-center">
+							<span class="flaticon-building"></span>
+						</div>
+						<div class="text pl-3">
+							<strong class="number" data-number="40">0</strong>
+							<span>Instituições<br>Parceiras</span>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-md-3 d-flex counter-wrap ftco-animate">
+					<div class="block-18 d-flex align-items-center">
+						<div class="icon d-flex align-items-center justify-content-center">
+							<span class="flaticon-crowd"></span>
+						</div>
+						<div class="text pl-3">
+							<strong class="number" data-number="5000">0</strong>
+							<span>Participantes<br>Envolvidos</span>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</section>
+
+	<!-- FAQ e Barras de Progresso e perguntas e respostas -->
+	<section class="ftco-section ftco-faqs services-section bg-light">
+		<div class="overlay"></div>
+		<div class="container">
+			<div class="row d-flex">
+
+				<!-- Coluna da imagem + barras de progresso -->
+				<div class="col-md-6 mb-5 md-md-0 order-md-last">
+					<div class="img w-100 mb-4" style="background-image: url(images/colegas-sorrindo.jpg);"></div>
+					<h2 class="heading-section2 mb-5">
+						Excelência Angolana em <br>Engenharia Civil
+					</h2>
+
+					<div class="row">
+						<div class="col-md-12 animate-box">
+							<div class="progress-wrap ftco-animate">
+								<h3>Qualidade Técnica</h3>
+								<div class="progress">
+									<div class="progress-bar color-1" role="progressbar" aria-valuenow="95"
+										aria-valuemin="0" aria-valuemax="100" style="width:95%">
+										<span>95%</span>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-md-12 animate-box">
+							<div class="progress-wrap ftco-animate">
+								<h3>Inovação em Projetos</h3>
+								<div class="progress">
+									<div class="progress-bar color-2" role="progressbar" aria-valuenow="90"
+										aria-valuemin="0" aria-valuemax="100" style="width:90%">
+										<span>90%</span>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-md-12 animate-box">
+							<div class="progress-wrap ftco-animate">
+								<h3>Sustentabilidade</h3>
+								<div class="progress">
+									<div class="progress-bar color-3" role="progressbar" aria-valuenow="85"
+										aria-valuemin="0" aria-valuemax="100" style="width:85%">
+										<span>85%</span>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-md-12 animate-box">
+							<div class="progress-wrap ftco-animate">
+								<h3>Impacto Social</h3>
+								<div class="progress">
+									<div class="progress-bar color-4" role="progressbar" aria-valuenow="92"
+										aria-valuemin="0" aria-valuemax="100" style="width:92%">
+										<span>92%</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- Coluna do FAQ -->
+				<div class="col-md-6 heading-section pr-md-5 ftco-animate d-flex align-items-center">
+					<div class="w-100 mb-4 mb-md-0">
+						<span class="subheading">Perguntas Frequentes</span>
+						<h2 class="mb-5">FAQ <br>PNEC</h2>
+
+						<div id="accordion" class="myaccordion w-100" aria-multiselectable="true">
+
+							<div class="card">
+								<div class="card-header p-0" id="headingOne">
+									<h2 class="mb-0">
+										<button
+											class="d-flex py-3 px-4 align-items-center justify-content-between btn btn-link"
+											data-toggle="collapse" data-target="#collapseOne" aria-expanded="true"
+											aria-controls="collapseOne">
+											<p class="mb-0">Quem pode candidatar-se ao prémio?</p>
+											<i class="fa" aria-hidden="true"></i>
+										</button>
+									</h2>
+								</div>
+								<div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
+									data-parent="#accordion">
+									<div class="card-body py-3 px-0">
+										<p>Engenheiros civis, empresas de construção, instituições académicas e equipas
+											técnicas que
+											desenvolvam projetos com impacto positivo em Angola podem concorrer ao PNEC.
+										</p>
+									</div>
+								</div>
+							</div>
+
+							<div class="card">
+								<div class="card-header p-0" id="headingTwo">
+									<h2 class="mb-0">
+										<button
+											class="d-flex py-3 px-4 align-items-center justify-content-between btn btn-link collapsed"
+											data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false"
+											aria-controls="collapseTwo">
+											<p class="mb-0">Quais são os critérios de avaliação?</p>
+											<i class="fa" aria-hidden="true"></i>
+										</button>
+									</h2>
+								</div>
+								<div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
+									data-parent="#accordion">
+									<div class="card-body py-3 px-0">
+										<ul>
+											<li>Qualidade técnica e inovação do projeto</li>
+											<li>Contribuição para o desenvolvimento de Angola</li>
+											<li>Respeito pelas normas de segurança</li>
+											<li>Práticas de sustentabilidade ambiental</li>
+											<li>Impacto social e comunitário</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+
+							<div class="card">
+								<div class="card-header p-0" id="headingThree">
+									<h2 class="mb-0">
+										<button
+											class="d-flex py-3 px-4 align-items-center justify-content-between btn btn-link collapsed"
+											data-toggle="collapse" data-target="#collapseThree" aria-expanded="false"
+											aria-controls="collapseThree">
+											<p class="mb-0">Como é feito o processo de seleção?</p>
+											<i class="fa" aria-hidden="true"></i>
+										</button>
+									</h2>
+								</div>
+								<div id="collapseThree" class="collapse" aria-labelledby="headingThree"
+									data-parent="#accordion">
+									<div class="card-body py-3 px-0">
+										<p>Um júri composto por especialistas nacionais e internacionais avalia as
+											candidaturas, analisando
+											cada projeto de acordo com os critérios estabelecidos no regulamento do
+											PNEC.</p>
+									</div>
+								</div>
+							</div>
+
+							<div class="card">
+								<div class="card-header p-0" id="headingFour">
+									<h2 class="mb-0">
+										<button
+											class="d-flex py-3 px-4 align-items-center justify-content-between btn btn-link collapsed"
+											data-toggle="collapse" data-target="#collapseFour" aria-expanded="false"
+											aria-controls="collapseFour">
+											<p class="mb-0">Quais são os benefícios para os vencedores?</p>
+											<i class="fa" aria-hidden="true"></i>
+										</button>
+									</h2>
+								</div>
+								<div id="collapseFour" class="collapse" aria-labelledby="headingFour"
+									data-parent="#accordion">
+									<div class="card-body py-3 px-0">
+										<p>Os vencedores recebem reconhecimento nacional, visibilidade no setor da
+											engenharia civil, apoio
+											institucional e oportunidades para futuras colaborações em projetos de
+											impacto.</p>
+									</div>
+								</div>
+							</div>
+
+						</div>
+
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</section>
+
+
+	<footer class="ftco-footer">
+		<div class="container">
+			<div class="row mb-5">
+				<!-- Logo e Descrição -->
+				<div class="col-sm-12 col-md">
+					<div class="ftco-footer-widget mb-4">
+						<h2 class="ftco-heading-2 logo"><a href="#">PEC</a></h2>
+						<p>Prémio de Engenharia Civil — valorizando a inovação, empenho e a excelência na
+							engenharia.</p>
+						<ul class="ftco-footer-social list-unstyled mt-2">
+							<li class="ftco-animate"><a href="#" style="display: flex; justify-content: center; align-items: center;"><i class="fab fa-linkedin"></i></a></li>
+							<li class="ftco-animate"><a href="#" style="display: flex; justify-content: center; align-items: center;" ><i class="fab fa-facebook"></i></a></li>
+							<li class="ftco-animate"><a href="#" style="display: flex; justify-content: center; align-items: center;" ><i class="fab fa-instagram"></i></a></li>
+						</ul>
+
+					</div>
+				</div>
+
+				<!-- Navegação -->
+				<div class="col-sm-12 col-md">
+					<div class="ftco-footer-widget mb-4 ml-md-4">
+						<h2 class="ftco-heading-2">Explorar</h2>
+						<ul class="list-unstyled">
+							<li><a href="#"><span class="fa fa-chevron-right mr-2"></span>Início</a></li>
+							<li><a href="#"><span class="fa fa-chevron-right mr-2"></span>Sobre o Prémio</a></li>
+							<li><a href="#"><span class="fa fa-chevron-right mr-2"></span>Candidatos</a></li>
+							<li><a href="#"><span class="fa fa-chevron-right mr-2"></span>Notícias</a></li>
+						</ul>
+					</div>
+				</div>
+
+				<!-- Informações -->
+				<div class="col-sm-12 col-md">
+					<div class="ftco-footer-widget mb-4 ml-md-4">
+						<h2 class="ftco-heading-2">Informações</h2>
+						<ul class="list-unstyled">
+							<li><a href="#"><span class="fa fa-chevron-right mr-2"></span>Regulamento</a></li>
+							<li><a href="#"><span class="fa fa-chevron-right mr-2"></span>Política de Privacidade</a>
+							</li>
+							<li><a href="#"><span class="fa fa-chevron-right mr-2"></span>Termos &amp; Condições</a>
+							</li>
+							<li><a href="#"><span class="fa fa-chevron-right mr-2"></span>FAQ</a></li>
+						</ul>
+					</div>
+				</div>
+
+				<!-- Contactos -->
+				<div class="col-sm-12 col-md">
+					<div class="ftco-footer-widget mb-4">
+						<h2 class="ftco-heading-2">Contactos</h2>
+						<div class="block-23 mb-3">
+							<ul>
+								<li><span class="icon fa fa-map-marker"></span><span class="text">Rua da Engenharia, nº
+										203 — Luanda, Angola</span></li>
+								<li><a href="#"><span class="icon fa fa-phone"></span><span class="text">+244 923 000
+											000</span></a></li>
+								<li><a href="mailto:info@pec.ao"><span class="icon fa fa-envelope"></span><span
+											class="text">info@pec.ao</span></a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Copyright -->
+		<div class="container-fluid px-0 py-5 bg-black">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<p class="mb-0" style="color: rgba(255,255,255,.5);">
+							Copyright &copy;
+							<script>document.write(new Date().getFullYear());</script> PEC — Prémio de Engenharia Civil.
+							Todos os direitos reservados.
+							<br>
+							Desenvolvido para a promoção da engenharia em Angola.
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+
+
+
+	<!-- loader -->
+	<div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px">
+			<circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee" />
+			<circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10"
+				stroke="#F96D00" />
+		</svg></div>
+
+
+	<script src="js/jquery.min.js"></script>
+	<script src="js/jquery-migrate-3.0.1.min.js"></script>
+	<script src="js/popper.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/jquery.easing.1.3.js"></script>
+	<script src="js/jquery.waypoints.min.js"></script>
+	<script src="js/jquery.stellar.min.js"></script>
+	<script src="js/owl.carousel.min.js"></script>
+	<script src="js/jquery.magnific-popup.min.js"></script>
+	<script src="js/jquery.animateNumber.min.js"></script>
+	<script src="js/scrollax.min.js"></script>
+	<script
+		src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&amp;sensor=false"></script>
+	<script src="js/google-map.js"></script>
+	<script src="js/main.js"></script>
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() { dataLayer.push(arguments); }
+		gtag('js', new Date());
+
+		gtag('config', 'UA-23581568-13');
+	</script>
+
+	<!-- Função do slide -->
+
+	<script>
+		$(window).on('load', function () {
+			var $c = $(".carousel-testimony");
+
+			// remove animações do template que podem esconder slides
+			$c.find('.item').removeClass('ftco-animate');
+
+			var count = $c.find('.item').length;
+			$c.owlCarousel({
+				loop: count > 3,
+				margin: 30,
+				autoplay: true,
+				autoplayTimeout: 4000,
+				autoplayHoverPause: true,
+				items: 1,
+				nav: false,
+				dots: true,
+				autoHeight: true,
+				responsive: {
+					0: { items: 1 },
+					768: { items: 2 },
+					1024: { items: 3 }
+				}
+			});
+
+			// recalc se o user redimensionar
+			$(window).on('resize orientationchange', function () {
+				$c.trigger('refresh.owl.carousel');
+			});
+		});
+	</script>
+
+	<style>
+		/* fallback para evitar espaços vazios */
+		.carousel-testimony .testimony-wrap {
+			min-height: 140px;
+		}
+
+		.carousel-testimony .user-img {
+			min-width: 70px;
+			min-height: 70px;
+			background-size: cover;
+			background-position: center;
+		}
+	</style>
+
+	<script defer
+		src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015"
+		integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ=="
+		data-cf-beacon='{"rayId":"97c9a16c8e2b77da","version":"2025.8.0","serverTiming":{"name":{"cfExtPri":true,"cfEdge":true,"cfOrigin":true,"cfL4":true,"cfSpeedBrain":true,"cfCacheStatus":true}},"token":"cd0b4b3a733644fc843ef0b185f98241","b":1}'
+		crossorigin="anonymous"></script>
+
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+</body>
+
+
+</html>

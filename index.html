@@ -1,0 +1,982 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<script>(function (w, i, g) { w[g] = w[g] || []; if (typeof w[g].push == 'function') w[g].push(i) })
+			(window, 'G-SEKJ4E9T4H', 'google_tags_first_party');</script>
+	<script async src="https://preview.colorlib.com/s9cc/"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() { dataLayer.push(arguments); }
+		gtag('js', new Date());
+		gtag('set', 'developer_id.dYzg1YT', true);
+		gtag('config', 'G-SEKJ4E9T4H');
+	</script>
+
+	<!-- Condigo de mudar a imagem do logotipo com scroll -->
+	<script>
+		let lastScrollY = 0;
+		let ticking = false;
+
+		window.addEventListener("scroll", function () {
+			lastScrollY = window.scrollY;
+
+			if (!ticking) {
+				window.requestAnimationFrame(function () {
+					const navbar = document.querySelector(".ftco-navbar-dark");
+					const logo = document.querySelector(".navbar-brand img");
+
+					if (lastScrollY > 50) {
+						navbar.classList.add("scrolled");
+						logo.setAttribute("src", "../eroo/images/logopolice1.png");
+					} else {
+						navbar.classList.remove("scrolled");
+						logo.setAttribute("src", "../eroo/images/logopolice1.png");
+					}
+
+					ticking = false;
+				});
+
+				ticking = true;
+			}
+		});
+
+	</script>
+
+	<title>PA - PORTAL DO AGENTE</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<link
+		href="https://fonts.googleapis.com/css2?family=Arizonia&amp;family=Roboto:wght@300;400;500;700;900&amp;display=swap"
+		rel="stylesheet">
+
+	<link
+		href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&amp;display=swap"
+		rel="stylesheet">
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+	<link rel="stylesheet"
+		href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+
+
+	<link rel="stylesheet" href="../../../stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+	<!-- Font Awesome 6 -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+
+	<!-- Flaticon (exemplo de um pack de ícones) -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/felippe-regazio/flaticon-css/flaticon.css">
+	<link href="https://fonts.cdnfonts.com/css/noway" rel="stylesheet">
+
+
+
+	<link rel="stylesheet" href="css/animate.css">
+
+	<link rel="stylesheet" href="css/owl.carousel.min.css">
+	<link rel="stylesheet" href="css/owl.theme.default.min.css">
+	<link rel="stylesheet" href="css/magnific-popup.css">
+
+	<link rel="stylesheet" href="css/flaticon.css">
+	<link rel="stylesheet" href="css/style.css">
+
+	<link href="https://vjs.zencdn.net/8.10.0/video-js.css" rel="stylesheet" />
+	<script src="https://vjs.zencdn.net/8.10.0/video.min.js"></script>
+
+</head>
+
+<body>
+
+	<div class="wrap">
+		<div class="container">
+			<div class="row justify-content-between">
+				<div class="col-12 col-md d-flex align-items-center">
+					<p class="mb-0 phone"><span class="mailus"></span> <a href="#">POLÍCIA NACIONAL DE ANGOLA | DIRECÇÃO
+							DE TELECOMUNICAÇÃO E TECNOLOGIA DE INFORMAÇÃO</a> <a href="#"></a>
+					</p>
+				</div>
+				<div class="col-12 col-md d-flex justify-content-md-end">
+					<!-- <div class="social-media">
+						<p class="mb-0 d-flex">
+							<a href="#" class="d-flex align-items-center justify-content-center"><span
+									class="fa fa-facebook"><i class="sr-only">Facebook</i></span></a>
+							<a href="#" class="d-flex align-items-center justify-content-center"><span
+									class="fa fa-twitter"><i class="sr-only">Twitter</i></span></a>
+							<a href="#" class="d-flex align-items-center justify-content-center"><span
+									class="fa fa-instagram"><i class="sr-only">Instagram</i></span></a>
+							<a href="#" class="d-flex align-items-center justify-content-center"><span
+									class="fa fa-dribbble"><i class="sr-only">Dribbble</i></span></a>
+						</p>
+					</div> -->
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<nav class="navbar navbar-expand-lg ftco-navbar-light" id="ftco-navbar">
+		<div class="container">
+			<a class="navbar-brand" href="index-2.html"><img src="../eroo/images/logopolice1.png" alt=""
+					width="60px"></a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav"
+				aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="oi oi-menu"></span> Menu
+			</button>
+
+			<div class="collapse navbar-collapse" id="ftco-nav">
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item active"><a href="index.html" class="nav-link" style="color: white;">APRESENTAÇÃO
+							DO PORTAL DO AGENTE</a>
+					</li>
+					<!-- <li class="nav-item"><a href="sobre-nos.html" class="nav-link">Sobre</a></li>
+					<li class="nav-item"><a href="candidatos.html" class="nav-link">Candidatos</a></li>
+					<li class="nav-item"><a href="portfolio.html" class="nav-link">Portfólio</a></li> -->
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<!-- END nav -->
+
+	<!-- Landing - page -->
+	<section class="hero-wrap">
+		<div class="home-slider owl-carousel js-fullheight">
+			<!-- Slide 1 -->
+			<div class="slider-item js-fullheight" style="background-image:url(images/bgpalandig1.jpg);">
+				<div class="overlay"></div>
+				<div class="container">
+					<div class="row d-flex no-gutters slider-text js-fullheight align-items-center align-items-stretch">
+						<div class="col-md-7 ftco-animate d-flex align-items-center">
+							<div class="text w-100 mt-5">
+								<span class="subheading">Bem-vindo ao PA</span>
+								<h1>Portal do Agente Mobile</h1>
+								<p class="mb-4">A tua plataforma oficial de suporte diário na Polícia Nacional.</p>
+								<p>
+									<a href="#inscricao" class="btn btn-primary">Inscreva-se Agora</a>
+									<a href="#categorias" class="btn btn-white">Funcionalidades</a>
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- Slide 2 -->
+			<div class="slider-item js-fullheight" style="background-image:url(images/bgpalandig2.jpg);">
+				<div class="overlay"></div>
+				<div class="container">
+					<div class="row d-flex no-gutters slider-text js-fullheight align-items-center align-items-stretch">
+						<div class="col-md-7 ftco-animate d-flex align-items-center">
+							<div class="text w-100 mt-5">
+								<span class="subheading">Funcionalidades e soluções</span>
+								<h1>Uma solução inovadora para o Agente da PNA</h1>
+								<p class="mb-4">Do registo diário de ocorrências à gestão de escalas, passando pela
+									formação contínua e comunicações internas, o Portal do Agente valoriza e apoia quem
+									protege Angola todos os dias.</p>
+								<p>
+									<a href="#sobre" class="btn btn-white">Saiba Mais</a>
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+		</div>
+	</section>
+
+	<section class="ftco-section ftco-services">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6 d-flex align-self-stretch ftco-animate">
+					<div class="pb-4 heading-section heading-section-white">
+						<h2 class="mb-3">FUNCIONALIDADES DO PORTAL DO AGENTE</h2>
+						<p class="mb-4">Apresentação das soluções Inovadoras que comportam o portal do Agente.</p>
+					</div>
+				</div>
+
+				<!-- Obras Públicas de Impacto -->
+				<div class="col-md-3 d-flex align-self-stretch ftco-animate">
+					<div class="services">
+						<div class="d-flex justify-content-end">
+							<div class="icon d-flex">
+								<i class="fa-solid fa-person-military-rifle"></i>
+							</div>
+						</div>
+						<div class="media-body">
+							<h3 class="heading mb-3">Acesso aos dados pessoais e profissionais</h3>
+						</div>
+						<a href="#" class="btn-custom d-flex align-items-center justify-content-center">
+							<span class="fa fa-chevron-right"></span>
+						</a>
+					</div>
+				</div>
+
+				<!-- Projeto de Infraestrutura -->
+				<div class="col-md-3 d-flex align-self-stretch ftco-animate">
+					<div class="services">
+						<div class="d-flex justify-content-end">
+							<div class="icon d-flex">
+								<i class="fa-solid fa-folder-open"></i>
+							</div>
+						</div>
+						<div class="media-body">
+							<h3 class="heading mb-3">Visualização e carregamentos de arquivos</h3>
+						</div>
+						<a href="#" class="btn-custom d-flex align-items-center justify-content-center">
+							<span class="fa fa-chevron-right"></span>
+						</a>
+					</div>
+				</div>
+
+				<!-- Inovação em Engenharia -->
+				<div class="col-md-3 d-flex align-self-stretch ftco-animate">
+					<div class="services active">
+						<div class="d-flex justify-content-end">
+							<div class="icon d-flex">
+								<i class="fa-solid fa-box"></i>
+							</div>
+						</div>
+						<div class="media-body">
+							<h3 class="heading mb-3">Visualização dos meios atribuidos</h3>
+						</div>
+						<a href="#" class="btn-custom d-flex align-items-center justify-content-center">
+							<span class="fa fa-chevron-right"></span>
+						</a>
+					</div>
+				</div>
+
+				<!-- Sustentabilidade e Ambiente -->
+				<div class="col-md-3 d-flex align-self-stretch ftco-animate">
+					<div class="services">
+						<div class="d-flex justify-content-end">
+							<div class="icon d-flex">
+								<i class="fa-brands fa-font-awesome"></i>
+							</div>
+						</div>
+						<div class="media-body">
+							<h3 class="heading mb-3">Solicitação de Licenças</h3>
+						</div>
+						<a href="#" class="btn-custom d-flex align-items-center justify-content-center">
+							<span class="fa fa-chevron-right"></span>
+						</a>
+					</div>
+				</div>
+
+
+				<!-- Investigação Científica -->
+				<div class="col-md-3 d-flex align-self-stretch ftco-animate">
+					<div class="services">
+						<div class="d-flex justify-content-end">
+							<div class="icon d-flex">
+								<i class="fa-solid fa-calendar-days"></i>
+							</div>
+						</div>
+						<div class="media-body">
+							<h3 class="heading mb-3">Acesso a Escala de serviço</h3>
+						</div>
+						<a href="#" class="btn-custom d-flex align-items-center justify-content-center">
+							<span class="fa fa-chevron-right"></span>
+						</a>
+					</div>
+				</div>
+
+				<!-- Engenheiro do Ano -->
+				<div class="col-md-3 d-flex align-self-stretch ftco-animate">
+					<div class="services">
+						<div class="d-flex justify-content-end">
+							<div class="icon d-flex">
+								<i class="fa-solid fa-book-medical"></i>
+							</div>
+						</div>
+						<div class="media-body">
+							<h3 class="heading mb-3">Marcação de consultas médicas</h3>
+						</div>
+						<a href="#" class="btn-custom d-flex align-items-center justify-content-center">
+							<span class="fa fa-chevron-right"></span>
+						</a>
+					</div>
+				</div>
+
+				<!-- Carreira Académica -->
+				<div class="col-md-3 d-flex align-self-stretch ftco-animate">
+					<div class="services">
+						<div class="d-flex justify-content-end">
+							<div class="icon d-flex">
+								<i class="fa-solid fa-list"></i>
+							</div>
+						</div>
+						<div class="media-body">
+							<h3 class="heading mb-3">Acesso as Órdens de serviço</h3>
+						</div>
+						<a href="#" class="btn-custom d-flex align-items-center justify-content-center">
+							<span class="fa fa-chevron-right"></span>
+						</a>
+					</div>
+				</div>
+
+				<!-- Jovem Engenheiro Revelação -->
+				<div class="col-md-3 d-flex align-self-stretch ftco-animate">
+					<div class="services">
+						<div class="d-flex justify-content-end">
+							<div class="icon d-flex">
+								<i class="fa-solid fa-newspaper"></i>
+							</div>
+						</div>
+						<div class="media-body">
+							<h3 class="heading mb-3">Vitrine de Informações da PNA</h3>
+						</div>
+						<a href="#" class="btn-custom d-flex align-items-center justify-content-center">
+							<span class="fa fa-chevron-right"></span>
+						</a>
+					</div>
+				</div>
+
+				<div class="col-md-3 d-flex align-self-stretch ftco-animate">
+					<div class="services">
+						<div class="d-flex justify-content-end">
+							<div class="icon d-flex">
+								<i class="fa-solid fa-house-lock"></i>
+							</div>
+						</div>
+						<div class="media-body">
+							<h3 class="heading mb-3">Rastreio de Esquadras mais Próximas</h3>
+						</div>
+						<a href="#" class="btn-custom d-flex align-items-center justify-content-center">
+							<span class="fa fa-chevron-right"></span>
+						</a>
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+		<div class="container mt-5">
+			<div class="row">
+				<div class="col-md-6 d-flex align-self-stretch ftco-animate">
+					<div class="pb-4 heading-section heading-section-white">
+						<h2 class="mb-3">FUNCIONALIDADES DO <br> É-POLÍCIA</h2>
+						<p class="mb-4">Soluções que comportam o É-POLÍCIA.</p>
+					</div>
+				</div>
+
+				<!-- Obras Públicas de Impacto -->
+				<div class="col-md-3 d-flex align-self-stretch ftco-animate">
+					<div class="services">
+						<div class="d-flex justify-content-end">
+							<div class="icon d-flex">
+								<i class="fa-solid fa-person-military-to-person"></i>
+								<!-- 	<i class="fa-solid fa-id-card-clip"></i> -->
+							</div>
+						</div>
+						<div class="media-body">
+							<h3 class="heading mb-3">Identificação Policial e Civil</h3>
+						</div>
+						<a href="#" class="btn-custom d-flex align-items-center justify-content-center">
+							<span class="fa fa-chevron-right"></span>
+						</a>
+					</div>
+				</div>
+
+				<!-- Projeto de Infraestrutura -->
+				<div class="col-md-3 d-flex align-self-stretch ftco-animate">
+					<div class="services">
+						<div class="d-flex justify-content-end">
+							<div class="icon d-flex">
+								<i class="fa-solid fa-users"></i>
+							</div>
+						</div>
+						<div class="media-body">
+							<h3 class="heading mb-3">Visualização de Profogos</h3>
+						</div>
+						<a href="#" class="btn-custom d-flex align-items-center justify-content-center">
+							<span class="fa fa-chevron-right"></span>
+						</a>
+					</div>
+				</div>
+
+				<!-- Sustentabilidade e Ambiente -->
+				<div class="col-md-3 d-flex align-self-stretch ftco-animate">
+					<div class="services">
+						<div class="d-flex justify-content-end">
+							<div class="icon d-flex">
+								<i class="fa-solid fa-car"></i>
+							</div>
+						</div>
+						<div class="media-body">
+							<h3 class="heading mb-3">Pesquisa de veículos</h3>
+						</div>
+						<a href="#" class="btn-custom d-flex align-items-center justify-content-center">
+							<span class="fa fa-chevron-right"></span>
+						</a>
+					</div>
+				</div>
+
+
+				<!-- Investigação Científica -->
+				<div class="col-md-3 d-flex align-self-stretch ftco-animate">
+					<div class="services">
+						<div class="d-flex justify-content-end">
+							<div class="icon d-flex">
+								<i class="fa-brands fa-audible"></i>
+							</div>
+						</div>
+						<div class="media-body">
+							<h3 class="heading mb-3">Registo Fácil de Ocorrências</h3>
+						</div>
+						<a href="#" class="btn-custom d-flex align-items-center justify-content-center">
+							<span class="fa fa-chevron-right"></span>
+						</a>
+					</div>
+				</div>
+
+				<!-- Engenheiro do Ano -->
+				<div class="col-md-3 d-flex align-self-stretch ftco-animate">
+					<div class="services">
+						<div class="d-flex justify-content-end">
+							<div class="icon d-flex">
+								<i class="fa-regular fa-id-card"></i>
+							</div>
+						</div>
+						<div class="media-body">
+							<h3 class="heading mb-3">Identificação de Condutores</h3>
+						</div>
+						<a href="#" class="btn-custom d-flex align-items-center justify-content-center">
+							<span class="fa fa-chevron-right"></span>
+						</a>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</section>
+
+	<!-- PRINTS -->
+
+	<section class="ftco-section">
+		<div class="container">
+			<div class="row no-gutters pb-5 justify-content-between">
+				<div class="col-md-7 col-lg-6 heading-section ftco-animate">
+					<span class="subheading">PORTAL DO AGENTE</span>
+					<h2 class="mb-4">Interfaces Principais</h2>
+				</div>
+				<div class="col-md-3 col-lg-2 d-flex align-items-center">
+
+				</div>
+			</div>
+		</div>
+		<div class="container container-2">
+			<div class="row no-gutters justify-content-center">
+				<div class="col-md-3 col-lg ftco-animate d-flex">
+					<div class="staff">
+						<div class="img-wrap d-flex align-items-stretch">
+							<div class="img d-flex align-items-center"
+								style="background-image: url(images/02welcome.png);">
+								<div class="text w-100 p-4 pb-4">
+									<h3>Boas Vindas</h3>
+									<span class="position">Descrição:</span>
+									<div class="faded">
+										<p>Interface inicial de apresentação do Portal do Agente.</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3 col-lg ftco-animate d-flex">
+					<div class="staff">
+						<div class="img-wrap d-flex align-items-stretch">
+							<div class="img d-flex align-items-center"
+								style="background-image: url(images/01login.png);">
+								<div class="text w-100 p-4 pb-4">
+									<h3>Login</h3>
+									<span class="position">Descrição:</span>
+									<div class="faded">
+										<p>Ecrã de autenticação segura do Portal do Agente. Permite o acesso com
+											credenciais pessoais (Email institucional, NIP, senha), garantindo proteção
+											de dados e conformidade com as normas de segurança da PNA</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3 col-lg ftco-animate d-flex">
+					<div class="staff">
+						<div class="img-wrap d-flex align-items-stretch">
+							<div class="img d-flex align-items-center"
+								style="background-image: url(images/03home-principal.png);">
+								<div class="text w-100 p-4 pb-4">
+									<h3>MENU | PA</h3>
+									<span class="position">Descrição:</span>
+									<div class="faded">
+										<p>Menu principal do Portal do Agente. Centraliza o acesso a todas as áreas
+											funcionais: Meus dados, Vitrine, É-POLÍCIA e Esquadras mais próximas</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3 col-lg ftco-animate d-flex">
+					<div class="staff">
+						<div class="img-wrap d-flex align-items-stretch">
+							<div class="img d-flex align-items-center"
+								style="background-image: url(images/06tela-epolicia.png);">
+								<div class="text w-100 p-4 pb-4">
+									<h3>MENU Principal | <br> É-POLÍCIA</h3>
+									<span class="position">Descrição:</span>
+									<div class="faded">
+										<p>Interface integrada do sistema É-POLÍCIA no Portal do Agente. Permite
+											consulta e registo de ocorrências policiais, pesquisa de indivíduos e
+											veículos, e integração com bases de dados nacionais</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<div class="row no-gutters pb-5 justify-content-between">
+				<div class="col-md-7 col-lg-6 heading-section ftco-animate">
+					<span class="subheading">PORTAL DO AGENTE</span>
+					<h2 class="mb-4">Outras Interfaces</h2>
+				</div>
+				<div class="col-md-3 col-lg-2 d-flex align-items-center">
+
+				</div>
+			</div>
+		</div>
+		<div class="container container-2">
+			<div class="row no-gutters justify-content-center">
+				<div class="col-md-3 col-lg ftco-animate d-flex">
+					<div class="staff">
+						<div class="img-wrap d-flex align-items-stretch">
+							<div class="img d-flex align-items-center"
+								style="background-image: url(images/012menu-principal.png);">
+								<div class="text w-100 p-4 pb-4">
+									<h3>Menu de acesso rápido</h3>
+									<span class="position">Descrição:</span>
+									<div class="faded">
+										<p>Barra de navegação rápida e personalizável. Disponibiliza atalhos para as
+											funções mais usadas pelo agente.</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3 col-lg ftco-animate d-flex">
+					<div class="staff">
+						<div class="img-wrap d-flex align-items-stretch">
+							<div class="img d-flex align-items-center"
+								style="background-image: url(images/04vitrine.png);">
+								<div class="text w-100 p-4 pb-4">
+									<h3>Vitrine</h3>
+									<span class="position">Descrição:</span>
+									<div class="faded">
+										<p>Painel informativo e dinâmico. Apresenta destaques institucionais,
+											comunicados da direção, prémios, condecorações, campanhas em curso e
+											informações relevantes para o dia a dia do agente</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3 col-lg ftco-animate d-flex">
+					<div class="staff">
+						<div class="img-wrap d-flex align-items-stretch">
+							<div class="img d-flex align-items-center"
+								style="background-image: url(images/011home-dash.png);">
+								<div class="text w-100 p-4 pb-4">
+									<h3>Painel de controlo</h3>
+									<span class="position">Descrição:</span>
+									<div class="faded">
+										<p>Painel administrativo da aplicação. Ilustra o total de dados registados e
+											vinculados</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3 col-lg ftco-animate d-flex">
+					<div class="staff">
+						<div class="img-wrap d-flex align-items-stretch">
+							<div class="img d-flex align-items-center"
+								style="background-image: url(images/013perfildoagente.png);">
+								<div class="text w-100 p-4 pb-4">
+									<h3>PERFIL DO AGENTE</h3>
+									<span class="position">Descrição:</span>
+									<div class="faded">
+										<p>Área pessoal do agente. Consulta de dados pessoais e profissionais associados
+											ao Agente.</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3 col-lg ftco-animate d-flex">
+					<div class="staff">
+						<div class="img-wrap d-flex align-items-stretch">
+							<div class="img d-flex align-items-center"
+								style="background-image: url(images/014meusarquivos.png);">
+								<div class="text w-100 p-4 pb-4">
+									<h3>MEUS ARQUIVOS</h3>
+									<span class="position">Descrição:</span>
+									<div class="faded">
+										<p>Repositório pessoal seguro. Armazena e organiza documentos digitais do agente
+											(certificados, comprovativos de formação, entre outros).</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3 col-lg ftco-animate d-flex">
+					<div class="staff">
+						<div class="img-wrap d-flex align-items-stretch">
+							<div class="img d-flex align-items-center"
+								style="background-image: url(images/015solicitacaodelicencas.png);">
+								<div class="text w-100 p-4 pb-4">
+									<h3>SOLICITAÇÃO DE LICENÇAS</h3>
+									<span class="position">Descrição:</span>
+									<div class="faded">
+										<p>Módulo para pedido de licenças e dispensas. Permite submeter solicitações de
+											licença anual, especial, por doença, maternidade/paternidade, bem como
+											acompanhar o estado do processo e histórico de concessões.</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3 col-lg ftco-animate d-flex">
+					<div class="staff">
+						<div class="img-wrap d-flex align-items-stretch">
+							<div class="img d-flex align-items-center"
+								style="background-image: url(images/016solicitacaoexemplo.png);">
+								<div class="text w-100 p-4 pb-4">
+									<h3>SOLICITAÇÃO DE LICENÇAS | PEDIDO</h3>
+									<span class="position">Descrição:</span>
+									<div class="faded">
+										<p>Formulário detalhado de solicitação de licença. Inclui seleção de tipo de
+											licença, período pretendido, justificativa, anexos obrigatórios e submissão
+											direta para análise da cadeia hierárquica.</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3 col-lg ftco-animate d-flex">
+					<div class="staff">
+						<div class="img-wrap d-flex align-items-stretch">
+							<div class="img d-flex align-items-center"
+								style="background-image: url(images/017meiosatribuidos.png);">
+								<div class="text w-100 p-4 pb-4">
+									<h3>MEIOS ATRIBUÍDOS</h3>
+									<span class="position">Descrição:</span>
+									<div class="faded">
+										<p>Consulta de meios materiais e viaturas atribuídos ao agente, Vestuários e
+											armamentos. Exibe estado, placa, modelo, data de atribuição.</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3 col-lg ftco-animate d-flex">
+					<div class="staff">
+						<div class="img-wrap d-flex align-items-stretch">
+							<div class="img d-flex align-items-center"
+								style="background-image: url(images/018consultasmedicas.png);">
+								<div class="text w-100 p-4 pb-4">
+									<h3>MARCAÇÃO DE CONSULTAS</h3>
+									<span class="position">Descrição:</span>
+									<div class="faded">
+										<p>Agendamento de consultas médicas e exames no âmbito do sistema de saúde da
+											PNA. Permite marcar consultas para o agente e familiares diretos e histórico
+											clínico autorizado.</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3 col-lg ftco-animate d-flex">
+					<div class="staff">
+						<div class="img-wrap d-flex align-items-stretch">
+							<div class="img d-flex align-items-center"
+								style="background-image: url(images/020formulariodemarcacaopessoal.png);">
+								<div class="text w-100 p-4 pb-4">
+									<h3>MARCAÇÃO DE CONSULTAS | FORMULÁRIO PESSOAL</h3>
+									<span class="position">Descrição:</span>
+									<div class="faded">
+										<p>Formulário específico para marcação de consulta médica do próprio agente.
+											Inclui escolha de especialidade, unidade de saúde, data/hora preferencial e
+											motivo da consulta</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3 col-lg ftco-animate d-flex">
+					<div class="staff">
+						<div class="img-wrap d-flex align-items-stretch">
+							<div class="img d-flex align-items-center"
+								style="background-image: url(images/019formulariodemarcacaofamiliar.png);">
+								<div class="text w-100 p-4 pb-4">
+									<h3>MARCAÇÃO DE CONSULTAS | FORMULÁRIO FAMILIAR</h3>
+									<span class="position">Descrição:</span>
+									<div class="faded">
+										<p>Formulário para agendamento de consultas de familiares diretos do agente
+											(cônjuge e filhos). Exige indicação do beneficiário, grau de parentesco e
+											dados complementares</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3 col-lg ftco-animate d-flex">
+					<div class="staff">
+						<div class="img-wrap d-flex align-items-stretch">
+							<div class="img d-flex align-items-center"
+								style="background-image: url(images/05esquadrasproximas.png);">
+								<div class="text w-100 p-4 pb-4">
+									<h3>ESQUADRAS PRÓXIMAS</h3>
+									<span class="position">Descrição:</span>
+									<div class="faded">
+										<p>Localização e informações em tempo real das esquadras e postos policiais mais
+											próximos do agente. Permite consulta de contactos, serviços disponíveis,
+											horários e rotas rápidas para apoio operacional ou administrativo.</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3 col-lg ftco-animate d-flex">
+					<div class="staff">
+						<div class="img-wrap d-flex align-items-stretch">
+							<div class="img d-flex align-items-center"
+								style="background-image: url(images/07profogos.png);">
+								<div class="text w-100 p-4 pb-4">
+									<h3>PROFOGOS</h3>
+									<span class="position">Descrição:</span>
+									<div class="faded">
+										<p>Módulo de gestão de fogos e emergências. Registo, acompanhamento e
+											coordenação de ocorrências relacionadas com incêndios, incluindo meios
+											envolvidos, estado de intervenção e relatórios finais para análise e
+											prevenção.</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3 col-lg ftco-animate d-flex">
+					<div class="staff">
+						<div class="img-wrap d-flex align-items-stretch">
+							<div class="img d-flex align-items-center"
+								style="background-image: url(images/08idopcoes.png);">
+								<div class="text w-100 p-4 pb-4">
+									<h3>IDENTICAÇÃO</h3>
+									<span class="position">Descrição:</span>
+									<div class="faded">
+										<p>Área de consulta dados de identificação policial e civil.</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3 col-lg ftco-animate d-flex">
+					<div class="staff">
+						<div class="img-wrap d-flex align-items-stretch">
+							<div class="img d-flex align-items-center"
+								style="background-image: url(images/09buscapolicial.png);">
+								<div class="text w-100 p-4 pb-4">
+									<h3>IDENTIFICAÇÃO POLICIAL</h3>
+									<span class="position">Descrição:</span>
+									<div class="faded">
+										<p>Consulta e validação de identificação de indivíduos no âmbito policial.
+											Pesquisa por nome, número de documento, foto ou impressões digitais, com
+											integração às bases de dados nacionais para apoio em operações e
+											averiguações.</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3 col-lg ftco-animate d-flex">
+					<div class="staff">
+						<div class="img-wrap d-flex align-items-stretch">
+							<div class="img d-flex align-items-center"
+								style="background-image: url(images/010buscacivil.png);">
+								<div class="text w-100 p-4 pb-4">
+									<h3>IDENTIFICAÇÃO CIVIL</h3>
+									<span class="position">Descrição:</span>
+									<div class="faded">
+										<p>Consulta de dados civis de cidadãos (bilhete de identidade). Ferramenta para
+											apoio em procedimentos administrativos, verificação de identidade e
+											colaboração interinstitucional.</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<style>
+		.frco-animate {
+			a {
+				.fab:hover {
+					color: red;
+				}
+			}
+		}
+	</style>
+
+
+
+	<footer class="ftco-footer">
+
+
+		<script>
+			videojs('meu-player', {
+				fluid: true,           // responsivo automático
+				controls: true,
+				autoplay: false,
+				muted: false
+			});
+		</script>
+
+		<!-- Copyright -->
+		<div class="container-fluid px-0 py-5 bg-black">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<p class="mb-0" style="color: rgba(255,255,255,.5);">
+							Copyright &copy;
+							<script>document.write(new Date().getFullYear());</script> PIIPS - Portal Integrado de
+							Informações Policiais e Serviços.
+							Todos os direitos reservados.
+							<br>
+							DIRECÇÃO DE TELECOMUNICAÇÃO E TECNOLOGIA DE INFORMAÇÃO
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+
+
+
+	<!-- loader -->
+	<div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px">
+			<circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee" />
+			<circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10"
+				stroke="#F96D00" />
+		</svg></div>
+
+
+	<script src="js/jquery.min.js"></script>
+	<script src="js/jquery-migrate-3.0.1.min.js"></script>
+	<script src="js/popper.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/jquery.easing.1.3.js"></script>
+	<script src="js/jquery.waypoints.min.js"></script>
+	<script src="js/jquery.stellar.min.js"></script>
+	<script src="js/owl.carousel.min.js"></script>
+	<script src="js/jquery.magnific-popup.min.js"></script>
+	<script src="js/jquery.animateNumber.min.js"></script>
+	<script src="js/scrollax.min.js"></script>
+	<script
+		src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&amp;sensor=false"></script>
+	<script src="js/google-map.js"></script>
+	<script src="js/main.js"></script>
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() { dataLayer.push(arguments); }
+		gtag('js', new Date());
+
+		gtag('config', 'UA-23581568-13');
+	</script>
+
+	<!-- Função do slide -->
+
+	<script>
+		$(window).on('load', function () {
+			var $c = $(".carousel-testimony");
+
+			// remove animações do template que podem esconder slides
+			$c.find('.item').removeClass('ftco-animate');
+
+			var count = $c.find('.item').length;
+			$c.owlCarousel({
+				loop: count > 3,
+				margin: 30,
+				autoplay: true,
+				autoplayTimeout: 4000,
+				autoplayHoverPause: true,
+				items: 1,
+				nav: false,
+				dots: true,
+				autoHeight: true,
+				responsive: {
+					0: { items: 1 },
+					768: { items: 2 },
+					1024: { items: 3 }
+				}
+			});
+
+			// recalc se o user redimensionar
+			$(window).on('resize orientationchange', function () {
+				$c.trigger('refresh.owl.carousel');
+			});
+		});
+	</script>
+
+	<style>
+		/* fallback para evitar espaços vazios */
+		.carousel-testimony .testimony-wrap {
+			min-height: 140px;
+		}
+
+		.carousel-testimony .user-img {
+			min-width: 70px;
+			min-height: 70px;
+			background-size: cover;
+			background-position: center;
+		}
+	</style>
+
+	<script defer
+		src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015"
+		integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ=="
+		data-cf-beacon='{"rayId":"97c9a16c8e2b77da","version":"2025.8.0","serverTiming":{"name":{"cfExtPri":true,"cfEdge":true,"cfOrigin":true,"cfL4":true,"cfSpeedBrain":true,"cfCacheStatus":true}},"token":"cd0b4b3a733644fc843ef0b185f98241","b":1}'
+		crossorigin="anonymous"></script>
+
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+</body>
+
+
+</html>
