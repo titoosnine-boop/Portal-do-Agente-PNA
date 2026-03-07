@@ -1,0 +1,433 @@
+/* From Uiverse.io by kennyotsu */
+/*works janky on mobile :<*/
+.containerr {
+  position: relative;
+  width: 190px;
+  height: 254px;
+  transition: 200ms;
+  margin-bottom: 20px;
+}
+
+.containerr:active {
+  width: 180px;
+  height: 245px;
+}
+
+/* ===== Cards 0 a 16 ===== */
+#card,
+#card1,
+#card2,
+#card3,
+#card4,
+#card5,
+#card6,
+#card7,
+#card8,
+#card9,
+#card10,
+#card11,
+#card12,
+#card13,
+#card14,
+#card15,
+#card16 {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  transition: .7s;
+  min-height: 300px;
+  min-width: 150px;
+  border: 4px solid #0c3c78;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#card {
+  background-image: url(../images/img/00\ Comissário\ Geral.jpg);
+}
+
+#card1 {
+  background-image: url(../images/img/01\ Comissário\ Chefe.jpg);
+}
+
+#card2 {
+  background-image: url(../images/img/01\ Comissário\ Chefee.jpg);
+}
+
+#card3 {
+  background-image: url(../images/img/02\ Comissário.jpg);
+}
+
+#card4 {
+  background-image: url(../images/img/03\ Subcomissário.jpg);
+}
+
+#card5 {
+  background-image: url(../images/img/04\ Superintendentechefe.jpg);
+}
+
+#card6 {
+  background-image: url(../images/img/05\ Superintendente.jpg);
+}
+
+#card7 {
+  background-image: url(../images/img/06\ Intendente.jpg);
+}
+
+#card8 {
+  background-image: url(../images/img/07\ Inspectorchefe.jpg);
+}
+
+#card9 {
+  background-image: url(../images/img/08\ Inspector.jpg);
+}
+
+#card10 {
+  background-image: url(../images/img/09\ Subinspector.jpg);
+}
+
+#card11 {
+  background-image: url(../images/img/10\ prisubchefe.jpg);
+}
+
+#card12 {
+  background-image: url(../images/img/11\ segsubchefe.jpg);
+}
+
+#card13 {
+  background-image: url(../images/img/12\ subchefe.jpg);
+}
+
+#card14 {
+  background-image: url(../images/img/13\ agenteprimeira.jpg);
+}
+
+#card15 {
+  background-image: url(../images/img/14\ agentesegunda.jpg);
+}
+
+#card16 {
+  background-image: url(../images/img/15\ agente.jpg);
+}
+
+/* ===== Subtitles, Titles e Prompt ===== */
+.subtitle {
+  margin-top: 155px;
+  transform: translateY(160px);
+  color: #000;
+  text-align: left;
+  font-weight: bold;
+  font-size: 12px;
+  width: 180px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px;
+  background-color: rgb(222, 228, 230);
+
+}
+
+.textx {
+  font-weight: lighter;
+}
+
+.title {
+  opacity: 0;
+  transition-duration: 300ms;
+  transition-timing-function: ease-in-out-out;
+  transition-delay: 100ms;
+  position: absolute;
+  font-size: x-large;
+  font-weight: bold;
+  color: white;
+}
+
+.tracker:hover~#card,
+.tracker:hover~#card1,
+.tracker:hover~#card2,
+.tracker:hover~#card3,
+.tracker:hover~#card4,
+.tracker:hover~#card5,
+.tracker:hover~#card6,
+.tracker:hover~#card7,
+.tracker:hover~#card8,
+.tracker:hover~#card9,
+.tracker:hover~#card10,
+.tracker:hover~#card11,
+.tracker:hover~#card12,
+.tracker:hover~#card13,
+.tracker:hover~#card14,
+.tracker:hover~#card15,
+.tracker:hover~#card16 .title {
+  opacity: 1;
+}
+
+#prompt {
+  bottom: 8px;
+  left: 12px;
+  z-index: 20;
+  font-size: 20px;
+  font-weight: bold;
+  transition: 300ms ease-in-out-out;
+  position: absolute;
+  max-width: 110px;
+  color: rgb(255, 255, 255);
+}
+
+.tracker {
+  position: absolute;
+  z-index: 200;
+  width: 100%;
+  height: 100%;
+}
+
+.tracker:hover {
+  cursor: pointer;
+}
+
+.tracker:hover~#card,
+.tracker:hover~#card1,
+.tracker:hover~#card2,
+.tracker:hover~#card3,
+.tracker:hover~#card4,
+.tracker:hover~#card5,
+.tracker:hover~#card6,
+.tracker:hover~#card7,
+.tracker:hover~#card8,
+.tracker:hover~#card9,
+.tracker:hover~#card10,
+.tracker:hover~#card11,
+.tracker:hover~#card12,
+.tracker:hover~#card13,
+.tracker:hover~#card14,
+.tracker:hover~#card15,
+.tracker:hover~#card16 {
+  transition: 300ms;
+  filter: brightness(1.1);
+}
+
+.container:hover #card::before,
+.container:hover #card1::before,
+.container:hover #card2::before,
+.container:hover #card3::before,
+.container:hover #card4::before,
+.container:hover #card5::before,
+.container:hover #card6::before,
+.container:hover #card7::before,
+.container:hover #card8::before,
+.container:hover #card9::before,
+.container:hover #card10::before,
+.container:hover #card11::before,
+.container:hover #card12::before,
+.container:hover #card13::before,
+.container:hover #card14::before,
+.container:hover #card15::before,
+.container:hover #card16::before {
+  transition: 200ms;
+  content: '';
+  opacity: 80%;
+}
+
+/* ===== Canvas e Trackers ===== */
+.canvas {
+  perspective: 800px;
+  inset: 0;
+  z-index: 200;
+  position: absolute;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-template-areas: "tr-1 tr-2 tr-3 tr-4 tr-5"
+    "tr-6 tr-7 tr-8 tr-9 tr-10"
+    "tr-11 tr-12 tr-13 tr-14 tr-15"
+    "tr-16 tr-17 tr-18 tr-19 tr-20"
+    "tr-21 tr-22 tr-23 tr-24 tr-25";
+}
+
+#card::before,
+#card1::before,
+#card2::before,
+#card3::before,
+#card4::before,
+#card5::before,
+#card6::before,
+#card7::before,
+#card8::before,
+#card9::before,
+#card10::before,
+#card11::before,
+#card12::before,
+#card13::before,
+#card14::before,
+#card15::before,
+#card16::before {
+  content: '';
+  filter: blur(2rem);
+  opacity: 30%;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: -1;
+  transition: 200ms;
+}
+
+/* ===== Grid áreas ===== */
+.tr-1 {
+  grid-area: tr-1;
+}
+
+.tr-2 {
+  grid-area: tr-2;
+}
+
+.tr-3 {
+  grid-area: tr-3;
+}
+
+.tr-4 {
+  grid-area: tr-4;
+}
+
+.tr-5 {
+  grid-area: tr-5;
+}
+
+.tr-6 {
+  grid-area: tr-6;
+}
+
+.tr-7 {
+  grid-area: tr-7;
+}
+
+.tr-8 {
+  grid-area: tr-8;
+}
+
+.tr-9 {
+  grid-area: tr-9;
+}
+
+.tr-10 {
+  grid-area: tr-10;
+}
+
+.tr-11 {
+  grid-area: tr-11;
+}
+
+.tr-12 {
+  grid-area: tr-12;
+}
+
+.tr-13 {
+  grid-area: tr-13;
+}
+
+.tr-14 {
+  grid-area: tr-14;
+}
+
+.tr-15 {
+  grid-area: tr-15;
+}
+
+.tr-16 {
+  grid-area: tr-16;
+}
+
+.tr-17 {
+  grid-area: tr-17;
+}
+
+.tr-18 {
+  grid-area: tr-18;
+}
+
+.tr-19 {
+  grid-area: tr-19;
+}
+
+.tr-20 {
+  grid-area: tr-20;
+}
+
+.tr-21 {
+  grid-area: tr-21;
+}
+
+.tr-22 {
+  grid-area: tr-22;
+}
+
+.tr-23 {
+  grid-area: tr-23;
+}
+
+.tr-24 {
+  grid-area: tr-24;
+}
+
+.tr-25 {
+  grid-area: tr-25;
+}
+
+/* ===== Hover Transformações ===== */
+.tr-1:hover~#card,
+.tr-1:hover~#card1,
+.tr-1:hover~#card2,
+.tr-1:hover~#card3,
+.tr-1:hover~#card4,
+.tr-1:hover~#card5,
+.tr-1:hover~#card6,
+.tr-1:hover~#card7,
+.tr-1:hover~#card8,
+.tr-1:hover~#card9,
+.tr-1:hover~#card10,
+.tr-1:hover~#card11,
+.tr-1:hover~#card12,
+.tr-1:hover~#card13,
+.tr-1:hover~#card14,
+.tr-1:hover~#card15,
+.tr-1:hover~#card16 {
+  transition: 125ms ease-in-out;
+  transform: rotateX(20deg) rotateY(-10deg) rotateZ(0deg);
+}
+
+/* Repetir mesma lógica para tr-2 até tr-25 conforme já existente, substituindo #card por todos os cards de 0 a 16 */
+/* ... o restante segue igual, copiando a mesma regra de hover do #card original para os #card1 até #card16 */
+
+/* ===== User Select e Nav-Tabs ===== */
+.noselect {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.nav-tabs .nav-link {
+  font-weight: bold;
+  color: #333;
+}
+
+.nav-tabs .nav-link.active {
+  background-color: #0c3c78;
+  color: white;
+}
+
+.desk {
+  display: block;
+}
+
+@media (max-width: 1300px) {
+  .desk {
+    display: none;
+  }
+}

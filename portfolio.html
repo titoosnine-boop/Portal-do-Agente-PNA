@@ -23,15 +23,15 @@
 
 			if (!ticking) {
 				window.requestAnimationFrame(function () {
-					const navbar = document.querySelector(".ftco-navbar-light");
+					const navbar = document.querySelector(".ftco-navbar-dark");
 					const logo = document.querySelector(".navbar-brand img");
 
 					if (lastScrollY > 50) {
 						navbar.classList.add("scrolled");
-						logo.setAttribute("src", "../eroo/images/logo-pec-preto.png");
+						logo.setAttribute("src", "../eroo/images/logopolice1.png");
 					} else {
 						navbar.classList.remove("scrolled");
-						logo.setAttribute("src", "../eroo/images/logo-pec-dourado.png");
+						logo.setAttribute("src", "../eroo/images/logopolice1.png");
 					}
 
 					ticking = false;
@@ -43,7 +43,7 @@
 
 	</script>
 
-	<title>PNEC - Prémio Nacional de Engenharia Civil</title>
+	<title>PA - PORTAL DO AGENTE</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -81,6 +81,11 @@
 
 	<link rel="stylesheet" href="css/flaticon.css">
 	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/stylecard.css">
+
+	<link href="https://vjs.zencdn.net/8.10.0/video-js.css" rel="stylesheet" />
+	<script src="https://vjs.zencdn.net/8.10.0/video.min.js"></script>
+
 </head>
 
 <body>
@@ -89,9 +94,8 @@
 		<div class="container">
 			<div class="row justify-content-between">
 				<div class="col-12 col-md d-flex align-items-center">
-					<p class="mb-0 phone"><span class="mailus">Phone no:</span> <a href="#">+00 1234 567</a> or <span
-							class="mailus">email us:</span> <a href="#"><span class="__cf_email__"
-								data-cfemail="c8ada5a9a1a4bba9a5b8a4ad88ada5a9a1a4e6aba7a5">[email&#160;protected]</span></a>
+					<p class="mb-0 phone"><span class="mailus"></span> <a href="#">POLÍCIA NACIONAL DE ANGOLA | DIRECÇÃO
+							DE TELECOMUNICAÇÃO E TECNOLOGIA DE INFORMAÇÃO</a> <a href="#"></a>
 					</p>
 				</div>
 				<div class="col-12 col-md d-flex justify-content-md-end">
@@ -112,10 +116,9 @@
 		</div>
 	</div>
 
-	<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+	<nav class="navbar navbar-expand-lg ftco-navbar-light" id="ftco-navbar">
 		<div class="container">
-			<a class="navbar-brand" href="index-2.html"><img src="../eroo/images/logo-pec-dourado.png" alt=""
-					width="120px"></a>
+			<a class="navbar-brand" href="index-2.html"><img src="/images/logopolice1.png" alt="" width="60px"></a>
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav"
 				aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="oi oi-menu"></span> Menu
@@ -123,10 +126,15 @@
 
 			<div class="collapse navbar-collapse" id="ftco-nav">
 				<ul class="navbar-nav ml-auto">
-					<li class="nav-item"><a href="index.html" class="nav-link">Início</a></li>
-					<li class="nav-item"><a href="sobre-nos.html" class="nav-link">Sobre</a></li>
+					<li class="nav-item active"><a href="index.html" class="nav-link"
+							style="color: rgb(255, 255, 255); font-weight: bold;">APRESENTAÇÃO</a>
+					</li>
+					<li class="nav-item active"><a href="portfolio.html" class="nav-link"
+							style="color: rgb(170, 136, 0);">GALERIA</a>
+					</li>
+					<!-- <li class="nav-item"><a href="sobre-nos.html" class="nav-link">Sobre</a></li>
 					<li class="nav-item"><a href="candidatos.html" class="nav-link">Candidatos</a></li>
-					<li class="nav-item active"><a href="portfolio.html" class="nav-link">Portfólio</a></li>
+					<li class="nav-item"><a href="portfolio.html" class="nav-link">Portfólio</a></li> -->
 				</ul>
 			</div>
 		</div>
@@ -137,19 +145,18 @@
 	<section class="hero-wrap">
 		<div class="home-slider owl-carousel js-fullheight">
 			<!-- Slide 1 -->
-			<div class="slider-item js-fullheight" style="background-image:url(images/bg_fundo1.jpg);">
+			<div class="slider-item js-fullheight" style="background-image:url(images/bgpalandig1.jpg);">
 				<div class="overlay"></div>
 				<div class="container">
 					<div class="row d-flex no-gutters slider-text js-fullheight align-items-center align-items-stretch">
 						<div class="col-md-7 ftco-animate d-flex align-items-center">
 							<div class="text w-100 mt-5">
-								<span class="subheading">Bem-vindo ao PEC</span>
-								<h1>Prémio de Engenharia Civil</h1>
-								<p class="mb-4">Reconhecendo a excelência, a inovação e o impacto da Engenharia Civil em
-									Angola.</p>
+								<span class="subheading">PNA</span>
+								<h1>GALERIA DE IMAGENS</h1>
+								<p class="mb-4">A nossa galeria de imagens está repleta de partições muito atrativas.
+								</p>
 								<p>
-									<a href="#inscricao" class="btn btn-primary">Inscreva-se Agora</a>
-									<a href="#categorias" class="btn btn-white">Ver Categorias</a>
+									<a href="#imagens" class="btn btn-primary">VISUALIZAR</a>
 								</p>
 							</div>
 						</div>
@@ -158,150 +165,784 @@
 			</div>
 
 			<!-- Slide 2 -->
-			<div class="slider-item js-fullheight" style="background-image:url(images/bg_person_eng1.jpg);">
+			<!-- 	<div class="slider-item js-fullheight" style="background-image:url(images/bgpalandig2.jpg);">
 				<div class="overlay"></div>
 				<div class="container">
 					<div class="row d-flex no-gutters slider-text js-fullheight align-items-center align-items-stretch">
 						<div class="col-md-7 ftco-animate d-flex align-items-center">
 							<div class="text w-100 mt-5">
-								<span class="subheading">Categorias de Premiação</span>
-								<h1>Celebrando Profissionais e Projetos de Destaque</h1>
-								<p class="mb-4">Do Engenheiro do Ano às grandes obras de infraestrutura, o PNEC valoriza
-									quem transforma Angola através da engenharia.</p>
-								<p>
-									<a href="#categorias" class="btn btn-primary">Conheça as Categorias</a>
-									<a href="#sobre" class="btn btn-white">Saiba Mais</a>
+								<span class="subheading">Funcionalidades e soluções</span>
+								<h1>Uma solução inovadora para o Agente da PNA</h1>
+								<p class="mb-4">
+									- <b>Consulta de dados do Agente</b> <br>
+									- <b>Identificação de Veículos e Condutores </b> <br>
+									- <b>Registo de Ocorrências e Consulta de Prófugos</b>
 								</p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
 
-			<!-- Slide 3 #F19B09 -->
-			<div class="slider-item js-fullheight" style="background-image:url(images/bg_fundo2.jpg);">
-				<div class="overlay"></div>
-				<div class="container">
-					<div class="row d-flex no-gutters slider-text js-fullheight align-items-center align-items-stretch">
-						<div class="col-md-7 ftco-animate d-flex align-items-center">
-							<div class="text w-100 mt-5">
-								<span class="subheading">Cerimônia de Premiação</span>
-								<h1>Uma Momento de Reconhecimento e Inspiração</h1>
-								<p class="mb-4">Junte-se a nós na celebração dos maiores nomes e projetos da Engenharia
-									Civil em Angola.</p>
 								<p>
-									<a href="#agenda" class="btn btn-primary">Ver Agenda</a>
-									<a href="#contacto" class="btn btn-white">Entre em Contato</a>
+									<a href="#prints" class="btn btn-white">Saiba Mais</a>
 								</p>
 							</div>
 						</div>
 					</div>
 				</div>
-			</div>
+			</div> -->
+
 		</div>
 	</section>
 
 
+	<section class="ftco-section bg-light" id="imagens">
 
-	<section class="ftco-section ftco-no-pt ftco-no-pb">
-		<div class="container">
-			<div class="row justify-content-center">
-				<div class="col-lg-10 ftco-animate portfolio-single py-md-5 mt-md-5">
-					<h2 class="mb-3 heading-title">PORTFÓLIO</h2>
-					<p>
-						<img src="images//chefe-em-frente.jpg" alt="" class="img-fluid">
-					</p>
-					<span class="portfolio-category">Engenharia Civil</span>
-					<h2 class="mb-3 heading-title">Projetos de Construção e Infraestrutura</h2>
-					<p>Apresentamos alguns dos nossos principais projetos de engenharia civil em Angola, incluindo obras
-						residenciais, comerciais e infraestrutura pública. Cada projeto é desenvolvido com foco em
-						qualidade técnica, inovação e impacto positivo para a comunidade.</p>
-					<div class="tag-widget post-tag-container mb-5 mt-5">
-						<div class="tagcloud">
-							<a href="#" class="tag-cloud-link">Residencial</a>
-							<a href="#" class="tag-cloud-link">Comercial</a>
-							<a href="#" class="tag-cloud-link">Infraestrutura</a>
-							<a href="#" class="tag-cloud-link">Sustentabilidade</a>
+		<div class="container" style="margin-top: -50px;">
+			<h1 class="heading-title">GALERIA DE IMAGENS</h1>
+			<span class="portfolio-category">Representação</span>
+			<h2 class="mb-3 heading-title">Distintivos da Polícia Nacional de Angola</h2>
+			<p>Apresentação das 5 classes de destintivos da PNA, com ilustração 3D para uma experiência do usuário
+				moderna.</p>
+
+			<!-- Abas -->
+			<ul class="nav nav-tabs justify-content-center" id="galeriaTabs" role="tablist">
+				<li class="nav-item">
+					<a class="nav-link active" id="comissarios-tab" data-toggle="tab" href="#comissarios">Oficiais
+						Comissários</a>
+				</li>
+
+				<li class="nav-item">
+					<a class="nav-link" id="oficiaissuperiores-tab" data-toggle="tab"
+						href="#oficiaissuperiores">Oficiais Superiores</a>
+				</li>
+
+				<li class="nav-item">
+					<a class="nav-link" id="oficiaissubaslternos-tab" data-toggle="tab"
+						href="#oficiaissubaslternos">Oficiais Subalternos</a>
+				</li>
+
+				<li class="nav-item">
+					<a class="nav-link" id="subchefes-tab" data-toggle="tab" href="#subchefes">Subchefes</a>
+				</li>
+
+				<li class="nav-item">
+					<a class="nav-link" id="agentes-tab" data-toggle="tab" href="#agentes">Agentes</a>
+				</li>
+			</ul>
+
+			<!-- Conteúdo das abas -->
+			<div class="tab-content mt-4" style="margin-top: 60px;">
+
+				<!-- Comissários -->
+				<div class="tab-pane fade show active" id="comissarios">
+					<div class="row">
+
+						<div class="col-md-2 mb-2" style="margin: 8px;">
+							<!-- From Uiverse.io by kennyotsu -->
+							<div class="containerr noselect">
+								<div class="canvas">
+									<div class="tracker tr-1"></div>
+									<div class="tracker tr-2"></div>
+									<div class="tracker tr-3"></div>
+									<div class="tracker tr-4"></div>
+									<div class="tracker tr-5"></div>
+									<div class="tracker tr-6"></div>
+									<div class="tracker tr-7"></div>
+									<div class="tracker tr-8"></div>
+									<div class="tracker tr-9"></div>
+									<div class="tracker tr-10"></div>
+									<div class="tracker tr-11"></div>
+									<div class="tracker tr-12"></div>
+									<div class="tracker tr-13"></div>
+									<div class="tracker tr-14"></div>
+									<div class="tracker tr-15"></div>
+									<div class="tracker tr-16"></div>
+									<div class="tracker tr-17"></div>
+									<div class="tracker tr-18"></div>
+									<div class="tracker tr-19"></div>
+									<div class="tracker tr-20"></div>
+									<div class="tracker tr-21"></div>
+									<div class="tracker tr-22"></div>
+									<div class="tracker tr-23"></div>
+									<div class="tracker tr-24"></div>
+									<div class="tracker tr-25"></div>
+									<div id="card">
+
+									</div>
+									<div class="subtitle">
+										Comissário Geral
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-md-2 mb-2" style="margin: 8px;">
+							<!-- From Uiverse.io by kennyotsu -->
+							<div class="containerr noselect">
+								<div class="canvas">
+									<div class="tracker tr-1"></div>
+									<div class="tracker tr-2"></div>
+									<div class="tracker tr-3"></div>
+									<div class="tracker tr-4"></div>
+									<div class="tracker tr-5"></div>
+									<div class="tracker tr-6"></div>
+									<div class="tracker tr-7"></div>
+									<div class="tracker tr-8"></div>
+									<div class="tracker tr-9"></div>
+									<div class="tracker tr-10"></div>
+									<div class="tracker tr-11"></div>
+									<div class="tracker tr-12"></div>
+									<div class="tracker tr-13"></div>
+									<div class="tracker tr-14"></div>
+									<div class="tracker tr-15"></div>
+									<div class="tracker tr-16"></div>
+									<div class="tracker tr-17"></div>
+									<div class="tracker tr-18"></div>
+									<div class="tracker tr-19"></div>
+									<div class="tracker tr-20"></div>
+									<div class="tracker tr-21"></div>
+									<div class="tracker tr-22"></div>
+									<div class="tracker tr-23"></div>
+									<div class="tracker tr-24"></div>
+									<div class="tracker tr-25"></div>
+									<div id="card1">
+									</div>
+									<div class="subtitle">
+										Comissário - Chefe **<br>
+									</div>
+								
+								</div>
+							</div>
+						</div>
+
+						<div class="col-md-2 mb-2" style="margin: 8px;">
+							<!-- From Uiverse.io by kennyotsu -->
+							<div class="containerr noselect">
+								<div class="canvas">
+									<div class="tracker tr-1"></div>
+									<div class="tracker tr-2"></div>
+									<div class="tracker tr-3"></div>
+									<div class="tracker tr-4"></div>
+									<div class="tracker tr-5"></div>
+									<div class="tracker tr-6"></div>
+									<div class="tracker tr-7"></div>
+									<div class="tracker tr-8"></div>
+									<div class="tracker tr-9"></div>
+									<div class="tracker tr-10"></div>
+									<div class="tracker tr-11"></div>
+									<div class="tracker tr-12"></div>
+									<div class="tracker tr-13"></div>
+									<div class="tracker tr-14"></div>
+									<div class="tracker tr-15"></div>
+									<div class="tracker tr-16"></div>
+									<div class="tracker tr-17"></div>
+									<div class="tracker tr-18"></div>
+									<div class="tracker tr-19"></div>
+									<div class="tracker tr-20"></div>
+									<div class="tracker tr-21"></div>
+									<div class="tracker tr-22"></div>
+									<div class="tracker tr-23"></div>
+									<div class="tracker tr-24"></div>
+									<div class="tracker tr-25"></div>
+									<div id="card2">
+
+									</div>
+									<div class="subtitle">
+										Comissário Chefe
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-md-2 mb-2" style="margin: 8px;">
+							<!-- From Uiverse.io by kennyotsu -->
+							<div class="containerr noselect">
+								<div class="canvas">
+									<div class="tracker tr-1"></div>
+									<div class="tracker tr-2"></div>
+									<div class="tracker tr-3"></div>
+									<div class="tracker tr-4"></div>
+									<div class="tracker tr-5"></div>
+									<div class="tracker tr-6"></div>
+									<div class="tracker tr-7"></div>
+									<div class="tracker tr-8"></div>
+									<div class="tracker tr-9"></div>
+									<div class="tracker tr-10"></div>
+									<div class="tracker tr-11"></div>
+									<div class="tracker tr-12"></div>
+									<div class="tracker tr-13"></div>
+									<div class="tracker tr-14"></div>
+									<div class="tracker tr-15"></div>
+									<div class="tracker tr-16"></div>
+									<div class="tracker tr-17"></div>
+									<div class="tracker tr-18"></div>
+									<div class="tracker tr-19"></div>
+									<div class="tracker tr-20"></div>
+									<div class="tracker tr-21"></div>
+									<div class="tracker tr-22"></div>
+									<div class="tracker tr-23"></div>
+									<div class="tracker tr-24"></div>
+									<div class="tracker tr-25"></div>
+									<div id="card3">
+
+									</div>
+									<div class="subtitle">
+										Comissário
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-md-2 mb-2" style="margin: 8px;">
+							<!-- From Uiverse.io by kennyotsu -->
+							<div class="containerr noselect">
+								<div class="canvas">
+									<div class="tracker tr-1"></div>
+									<div class="tracker tr-2"></div>
+									<div class="tracker tr-3"></div>
+									<div class="tracker tr-4"></div>
+									<div class="tracker tr-5"></div>
+									<div class="tracker tr-6"></div>
+									<div class="tracker tr-7"></div>
+									<div class="tracker tr-8"></div>
+									<div class="tracker tr-9"></div>
+									<div class="tracker tr-10"></div>
+									<div class="tracker tr-11"></div>
+									<div class="tracker tr-12"></div>
+									<div class="tracker tr-13"></div>
+									<div class="tracker tr-14"></div>
+									<div class="tracker tr-15"></div>
+									<div class="tracker tr-16"></div>
+									<div class="tracker tr-17"></div>
+									<div class="tracker tr-18"></div>
+									<div class="tracker tr-19"></div>
+									<div class="tracker tr-20"></div>
+									<div class="tracker tr-21"></div>
+									<div class="tracker tr-22"></div>
+									<div class="tracker tr-23"></div>
+									<div class="tracker tr-24"></div>
+									<div class="tracker tr-25"></div>
+									<div id="card4">
+
+									</div>
+									<div class="subtitle">
+										Subcomissário
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+
+				<!-- oficiaissuperiores -->
+				<div class="tab-pane fade" id="oficiaissuperiores" style="margin-top: -280px;">
+					<div class="row">
+
+						<div class="col-md-3 mb-2">
+							<!-- From Uiverse.io by kennyotsu -->
+							<div class="containerr noselect">
+								<div class="canvas">
+									<div class="tracker tr-1"></div>
+									<div class="tracker tr-2"></div>
+									<div class="tracker tr-3"></div>
+									<div class="tracker tr-4"></div>
+									<div class="tracker tr-5"></div>
+									<div class="tracker tr-6"></div>
+									<div class="tracker tr-7"></div>
+									<div class="tracker tr-8"></div>
+									<div class="tracker tr-9"></div>
+									<div class="tracker tr-10"></div>
+									<div class="tracker tr-11"></div>
+									<div class="tracker tr-12"></div>
+									<div class="tracker tr-13"></div>
+									<div class="tracker tr-14"></div>
+									<div class="tracker tr-15"></div>
+									<div class="tracker tr-16"></div>
+									<div class="tracker tr-17"></div>
+									<div class="tracker tr-18"></div>
+									<div class="tracker tr-19"></div>
+									<div class="tracker tr-20"></div>
+									<div class="tracker tr-21"></div>
+									<div class="tracker tr-22"></div>
+									<div class="tracker tr-23"></div>
+									<div class="tracker tr-24"></div>
+									<div class="tracker tr-25"></div>
+									<div id="card5">
+
+									</div>
+									<div class="subtitle">
+										Superintendente - Chefe
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-md-3 mb-2">
+							<!-- From Uiverse.io by kennyotsu -->
+							<div class="containerr noselect">
+								<div class="canvas">
+									<div class="tracker tr-1"></div>
+									<div class="tracker tr-2"></div>
+									<div class="tracker tr-3"></div>
+									<div class="tracker tr-4"></div>
+									<div class="tracker tr-5"></div>
+									<div class="tracker tr-6"></div>
+									<div class="tracker tr-7"></div>
+									<div class="tracker tr-8"></div>
+									<div class="tracker tr-9"></div>
+									<div class="tracker tr-10"></div>
+									<div class="tracker tr-11"></div>
+									<div class="tracker tr-12"></div>
+									<div class="tracker tr-13"></div>
+									<div class="tracker tr-14"></div>
+									<div class="tracker tr-15"></div>
+									<div class="tracker tr-16"></div>
+									<div class="tracker tr-17"></div>
+									<div class="tracker tr-18"></div>
+									<div class="tracker tr-19"></div>
+									<div class="tracker tr-20"></div>
+									<div class="tracker tr-21"></div>
+									<div class="tracker tr-22"></div>
+									<div class="tracker tr-23"></div>
+									<div class="tracker tr-24"></div>
+									<div class="tracker tr-25"></div>
+									<div id="card6">
+
+									</div>
+									<div class="subtitle">
+										Superintendente
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-md-3 mb-2">
+							<!-- From Uiverse.io by kennyotsu -->
+							<div class="containerr noselect">
+								<div class="canvas">
+									<div class="tracker tr-1"></div>
+									<div class="tracker tr-2"></div>
+									<div class="tracker tr-3"></div>
+									<div class="tracker tr-4"></div>
+									<div class="tracker tr-5"></div>
+									<div class="tracker tr-6"></div>
+									<div class="tracker tr-7"></div>
+									<div class="tracker tr-8"></div>
+									<div class="tracker tr-9"></div>
+									<div class="tracker tr-10"></div>
+									<div class="tracker tr-11"></div>
+									<div class="tracker tr-12"></div>
+									<div class="tracker tr-13"></div>
+									<div class="tracker tr-14"></div>
+									<div class="tracker tr-15"></div>
+									<div class="tracker tr-16"></div>
+									<div class="tracker tr-17"></div>
+									<div class="tracker tr-18"></div>
+									<div class="tracker tr-19"></div>
+									<div class="tracker tr-20"></div>
+									<div class="tracker tr-21"></div>
+									<div class="tracker tr-22"></div>
+									<div class="tracker tr-23"></div>
+									<div class="tracker tr-24"></div>
+									<div class="tracker tr-25"></div>
+									<div id="card7">
+
+									</div>
+									<div class="subtitle">
+										Intendente
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+
+				<!-- Oficiaissubalternos -->
+				<div class="tab-pane fade" id="oficiaissubaslternos" style="margin-top: -290px;">
+					<div class="row">
+
+						<div class="col-md-3 mb-2">
+							<!-- From Uiverse.io by kennyotsu -->
+							<div class="containerr noselect">
+								<div class="canvas">
+									<div class="tracker tr-1"></div>
+									<div class="tracker tr-2"></div>
+									<div class="tracker tr-3"></div>
+									<div class="tracker tr-4"></div>
+									<div class="tracker tr-5"></div>
+									<div class="tracker tr-6"></div>
+									<div class="tracker tr-7"></div>
+									<div class="tracker tr-8"></div>
+									<div class="tracker tr-9"></div>
+									<div class="tracker tr-10"></div>
+									<div class="tracker tr-11"></div>
+									<div class="tracker tr-12"></div>
+									<div class="tracker tr-13"></div>
+									<div class="tracker tr-14"></div>
+									<div class="tracker tr-15"></div>
+									<div class="tracker tr-16"></div>
+									<div class="tracker tr-17"></div>
+									<div class="tracker tr-18"></div>
+									<div class="tracker tr-19"></div>
+									<div class="tracker tr-20"></div>
+									<div class="tracker tr-21"></div>
+									<div class="tracker tr-22"></div>
+									<div class="tracker tr-23"></div>
+									<div class="tracker tr-24"></div>
+									<div class="tracker tr-25"></div>
+									<div id="card8">
+
+									</div>
+									<div class="subtitle">
+										Inspector - Chefe
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-md-3 mb-2">
+							<!-- From Uiverse.io by kennyotsu -->
+							<div class="containerr noselect">
+								<div class="canvas">
+									<div class="tracker tr-1"></div>
+									<div class="tracker tr-2"></div>
+									<div class="tracker tr-3"></div>
+									<div class="tracker tr-4"></div>
+									<div class="tracker tr-5"></div>
+									<div class="tracker tr-6"></div>
+									<div class="tracker tr-7"></div>
+									<div class="tracker tr-8"></div>
+									<div class="tracker tr-9"></div>
+									<div class="tracker tr-10"></div>
+									<div class="tracker tr-11"></div>
+									<div class="tracker tr-12"></div>
+									<div class="tracker tr-13"></div>
+									<div class="tracker tr-14"></div>
+									<div class="tracker tr-15"></div>
+									<div class="tracker tr-16"></div>
+									<div class="tracker tr-17"></div>
+									<div class="tracker tr-18"></div>
+									<div class="tracker tr-19"></div>
+									<div class="tracker tr-20"></div>
+									<div class="tracker tr-21"></div>
+									<div class="tracker tr-22"></div>
+									<div class="tracker tr-23"></div>
+									<div class="tracker tr-24"></div>
+									<div class="tracker tr-25"></div>
+									<div id="card9">
+
+									</div>
+									<div class="subtitle">
+										Inspector
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-md-3 mb-2">
+							<!-- From Uiverse.io by kennyotsu -->
+							<div class="containerr noselect">
+								<div class="canvas">
+									<div class="tracker tr-1"></div>
+									<div class="tracker tr-2"></div>
+									<div class="tracker tr-3"></div>
+									<div class="tracker tr-4"></div>
+									<div class="tracker tr-5"></div>
+									<div class="tracker tr-6"></div>
+									<div class="tracker tr-7"></div>
+									<div class="tracker tr-8"></div>
+									<div class="tracker tr-9"></div>
+									<div class="tracker tr-10"></div>
+									<div class="tracker tr-11"></div>
+									<div class="tracker tr-12"></div>
+									<div class="tracker tr-13"></div>
+									<div class="tracker tr-14"></div>
+									<div class="tracker tr-15"></div>
+									<div class="tracker tr-16"></div>
+									<div class="tracker tr-17"></div>
+									<div class="tracker tr-18"></div>
+									<div class="tracker tr-19"></div>
+									<div class="tracker tr-20"></div>
+									<div class="tracker tr-21"></div>
+									<div class="tracker tr-22"></div>
+									<div class="tracker tr-23"></div>
+									<div class="tracker tr-24"></div>
+									<div class="tracker tr-25"></div>
+									<div id="card10">
+
+									</div>
+									<div class="subtitle">
+										Subinspector
+									</div>
+								</div>
+							</div>
 						</div>
 					</div>
+				</div>
 
+				<!-- Subchefes -->
+				<div class="tab-pane fade" id="subchefes" style="margin-top: -290px;">
+					<div class="row">
 
-				</div> <!-- .col-md-8 -->
+						<div class="col-md-3 mb-2">
+							<!-- From Uiverse.io by kennyotsu -->
+							<div class="containerr noselect">
+								<div class="canvas">
+									<div class="tracker tr-1"></div>
+									<div class="tracker tr-2"></div>
+									<div class="tracker tr-3"></div>
+									<div class="tracker tr-4"></div>
+									<div class="tracker tr-5"></div>
+									<div class="tracker tr-6"></div>
+									<div class="tracker tr-7"></div>
+									<div class="tracker tr-8"></div>
+									<div class="tracker tr-9"></div>
+									<div class="tracker tr-10"></div>
+									<div class="tracker tr-11"></div>
+									<div class="tracker tr-12"></div>
+									<div class="tracker tr-13"></div>
+									<div class="tracker tr-14"></div>
+									<div class="tracker tr-15"></div>
+									<div class="tracker tr-16"></div>
+									<div class="tracker tr-17"></div>
+									<div class="tracker tr-18"></div>
+									<div class="tracker tr-19"></div>
+									<div class="tracker tr-20"></div>
+									<div class="tracker tr-21"></div>
+									<div class="tracker tr-22"></div>
+									<div class="tracker tr-23"></div>
+									<div class="tracker tr-24"></div>
+									<div class="tracker tr-25"></div>
+									<div id="card11">
+
+									</div>
+									<div class="subtitle">
+										1º Subchefe
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-md-3 mb-2">
+							<!-- From Uiverse.io by kennyotsu -->
+							<div class="containerr noselect">
+								<div class="canvas">
+									<div class="tracker tr-1"></div>
+									<div class="tracker tr-2"></div>
+									<div class="tracker tr-3"></div>
+									<div class="tracker tr-4"></div>
+									<div class="tracker tr-5"></div>
+									<div class="tracker tr-6"></div>
+									<div class="tracker tr-7"></div>
+									<div class="tracker tr-8"></div>
+									<div class="tracker tr-9"></div>
+									<div class="tracker tr-10"></div>
+									<div class="tracker tr-11"></div>
+									<div class="tracker tr-12"></div>
+									<div class="tracker tr-13"></div>
+									<div class="tracker tr-14"></div>
+									<div class="tracker tr-15"></div>
+									<div class="tracker tr-16"></div>
+									<div class="tracker tr-17"></div>
+									<div class="tracker tr-18"></div>
+									<div class="tracker tr-19"></div>
+									<div class="tracker tr-20"></div>
+									<div class="tracker tr-21"></div>
+									<div class="tracker tr-22"></div>
+									<div class="tracker tr-23"></div>
+									<div class="tracker tr-24"></div>
+									<div class="tracker tr-25"></div>
+									<div id="card12">
+
+									</div>
+									<div class="subtitle">
+										2º Subchefe
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-md-3 mb-2">
+							<!-- From Uiverse.io by kennyotsu -->
+							<div class="containerr noselect">
+								<div class="canvas">
+									<div class="tracker tr-1"></div>
+									<div class="tracker tr-2"></div>
+									<div class="tracker tr-3"></div>
+									<div class="tracker tr-4"></div>
+									<div class="tracker tr-5"></div>
+									<div class="tracker tr-6"></div>
+									<div class="tracker tr-7"></div>
+									<div class="tracker tr-8"></div>
+									<div class="tracker tr-9"></div>
+									<div class="tracker tr-10"></div>
+									<div class="tracker tr-11"></div>
+									<div class="tracker tr-12"></div>
+									<div class="tracker tr-13"></div>
+									<div class="tracker tr-14"></div>
+									<div class="tracker tr-15"></div>
+									<div class="tracker tr-16"></div>
+									<div class="tracker tr-17"></div>
+									<div class="tracker tr-18"></div>
+									<div class="tracker tr-19"></div>
+									<div class="tracker tr-20"></div>
+									<div class="tracker tr-21"></div>
+									<div class="tracker tr-22"></div>
+									<div class="tracker tr-23"></div>
+									<div class="tracker tr-24"></div>
+									<div class="tracker tr-25"></div>
+									<div id="card13">
+
+									</div>
+									<div class="subtitle">
+										3º Subchefe
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+
+				<!-- Agentes -->
+				<div class="tab-pane fade" id="agentes" style="margin-top: -290px;">
+					<div class="row">
+
+						<div class="col-md-3 mb-2">
+							<!-- From Uiverse.io by kennyotsu -->
+							<div class="containerr noselect">
+								<div class="canvas">
+									<div class="tracker tr-1"></div>
+									<div class="tracker tr-2"></div>
+									<div class="tracker tr-3"></div>
+									<div class="tracker tr-4"></div>
+									<div class="tracker tr-5"></div>
+									<div class="tracker tr-6"></div>
+									<div class="tracker tr-7"></div>
+									<div class="tracker tr-8"></div>
+									<div class="tracker tr-9"></div>
+									<div class="tracker tr-10"></div>
+									<div class="tracker tr-11"></div>
+									<div class="tracker tr-12"></div>
+									<div class="tracker tr-13"></div>
+									<div class="tracker tr-14"></div>
+									<div class="tracker tr-15"></div>
+									<div class="tracker tr-16"></div>
+									<div class="tracker tr-17"></div>
+									<div class="tracker tr-18"></div>
+									<div class="tracker tr-19"></div>
+									<div class="tracker tr-20"></div>
+									<div class="tracker tr-21"></div>
+									<div class="tracker tr-22"></div>
+									<div class="tracker tr-23"></div>
+									<div class="tracker tr-24"></div>
+									<div class="tracker tr-25"></div>
+									<div id="card14">
+
+									</div>
+									<div class="subtitle">
+										Agente 1º Classe
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-md-3 mb-2">
+							<!-- From Uiverse.io by kennyotsu -->
+							<div class="containerr noselect">
+								<div class="canvas">
+									<div class="tracker tr-1"></div>
+									<div class="tracker tr-2"></div>
+									<div class="tracker tr-3"></div>
+									<div class="tracker tr-4"></div>
+									<div class="tracker tr-5"></div>
+									<div class="tracker tr-6"></div>
+									<div class="tracker tr-7"></div>
+									<div class="tracker tr-8"></div>
+									<div class="tracker tr-9"></div>
+									<div class="tracker tr-10"></div>
+									<div class="tracker tr-11"></div>
+									<div class="tracker tr-12"></div>
+									<div class="tracker tr-13"></div>
+									<div class="tracker tr-14"></div>
+									<div class="tracker tr-15"></div>
+									<div class="tracker tr-16"></div>
+									<div class="tracker tr-17"></div>
+									<div class="tracker tr-18"></div>
+									<div class="tracker tr-19"></div>
+									<div class="tracker tr-20"></div>
+									<div class="tracker tr-21"></div>
+									<div class="tracker tr-22"></div>
+									<div class="tracker tr-23"></div>
+									<div class="tracker tr-24"></div>
+									<div class="tracker tr-25"></div>
+									<div id="card15">
+
+									</div>
+									<div class="subtitle">
+										Agente de 2º Classe
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-md-3 mb-2">
+							<!-- From Uiverse.io by kennyotsu -->
+							<div class="containerr noselect">
+								<div class="canvas">
+									<div class="tracker tr-1"></div>
+									<div class="tracker tr-2"></div>
+									<div class="tracker tr-3"></div>
+									<div class="tracker tr-4"></div>
+									<div class="tracker tr-5"></div>
+									<div class="tracker tr-6"></div>
+									<div class="tracker tr-7"></div>
+									<div class="tracker tr-8"></div>
+									<div class="tracker tr-9"></div>
+									<div class="tracker tr-10"></div>
+									<div class="tracker tr-11"></div>
+									<div class="tracker tr-12"></div>
+									<div class="tracker tr-13"></div>
+									<div class="tracker tr-14"></div>
+									<div class="tracker tr-15"></div>
+									<div class="tracker tr-16"></div>
+									<div class="tracker tr-17"></div>
+									<div class="tracker tr-18"></div>
+									<div class="tracker tr-19"></div>
+									<div class="tracker tr-20"></div>
+									<div class="tracker tr-21"></div>
+									<div class="tracker tr-22"></div>
+									<div class="tracker tr-23"></div>
+									<div class="tracker tr-24"></div>
+									<div class="tracker tr-25"></div>
+									<div id="card16">
+
+									</div>
+									<div class="subtitle">
+										Agente de 3º Classe
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+
 			</div>
-		</div>
-	</section> <!-- .section -->
 
+		</div>
+	</section>
 
 	<footer class="ftco-footer">
-		<div class="container">
-			<div class="row mb-5">
-				<!-- Logo e Descrição -->
-				<div class="col-sm-12 col-md">
-					<div class="ftco-footer-widget mb-4">
-						<h2 class="ftco-heading-2 logo"><a href="#">PEC</a></h2>
-						<p>Prémio de Engenharia Civil — valorizando a inovação, empenho e a excelência na
-							engenharia.</p>
-						<ul class="ftco-footer-social list-unstyled mt-2">
-							<li class="ftco-animate"><a href="#"
-									style="display: flex; justify-content: center; align-items: center;"><i
-										class="fab fa-linkedin"></i></a></li>
-							<li class="ftco-animate"><a href="#"
-									style="display: flex; justify-content: center; align-items: center;"><i
-										class="fab fa-facebook"></i></a></li>
-							<li class="ftco-animate"><a href="#"
-									style="display: flex; justify-content: center; align-items: center;"><i
-										class="fab fa-instagram"></i></a></li>
-						</ul>
 
-					</div>
-				</div>
 
-				<!-- Navegação -->
-				<div class="col-sm-12 col-md">
-					<div class="ftco-footer-widget mb-4 ml-md-4">
-						<h2 class="ftco-heading-2">Explorar</h2>
-						<ul class="list-unstyled">
-							<li><a href="#"><span class="fa fa-chevron-right mr-2"></span>Início</a></li>
-							<li><a href="#"><span class="fa fa-chevron-right mr-2"></span>Sobre o Prémio</a></li>
-							<li><a href="#"><span class="fa fa-chevron-right mr-2"></span>Candidatos</a></li>
-							<li><a href="#"><span class="fa fa-chevron-right mr-2"></span>Notícias</a></li>
-						</ul>
-					</div>
-				</div>
-
-				<!-- Informações -->
-				<div class="col-sm-12 col-md">
-					<div class="ftco-footer-widget mb-4 ml-md-4">
-						<h2 class="ftco-heading-2">Informações</h2>
-						<ul class="list-unstyled">
-							<li><a href="#"><span class="fa fa-chevron-right mr-2"></span>Regulamento</a></li>
-							<li><a href="#"><span class="fa fa-chevron-right mr-2"></span>Política de Privacidade</a>
-							</li>
-							<li><a href="#"><span class="fa fa-chevron-right mr-2"></span>Termos &amp; Condições</a>
-							</li>
-							<li><a href="#"><span class="fa fa-chevron-right mr-2"></span>FAQ</a></li>
-						</ul>
-					</div>
-				</div>
-
-				<!-- Contactos -->
-				<div class="col-sm-12 col-md">
-					<div class="ftco-footer-widget mb-4">
-						<h2 class="ftco-heading-2">Contactos</h2>
-						<div class="block-23 mb-3">
-							<ul>
-								<li><span class="icon fa fa-map-marker"></span><span class="text">Rua da Engenharia, nº
-										203 — Luanda, Angola</span></li>
-								<li><a href="#"><span class="icon fa fa-phone"></span><span class="text">+244 923 000
-											000</span></a></li>
-								<li><a href="mailto:info@pec.ao"><span class="icon fa fa-envelope"></span><span
-											class="text">info@pec.ao</span></a></li>
-							</ul>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
+		<script>
+			videojs('meu-player', {
+				fluid: true,           // responsivo automático
+				controls: true,
+				autoplay: false,
+				muted: false
+			});
+		</script>
 
 		<!-- Copyright -->
 		<div class="container-fluid px-0 py-5 bg-black">
@@ -310,16 +951,18 @@
 					<div class="col-md-12">
 						<p class="mb-0" style="color: rgba(255,255,255,.5);">
 							Copyright &copy;
-							<script>document.write(new Date().getFullYear());</script> PEC — Prémio de Engenharia Civil.
+							<script>document.write(new Date().getFullYear());</script> PIIPS - Portal Integrado de
+							Informações Policiais e Serviços.
 							Todos os direitos reservados.
 							<br>
-							Desenvolvido para a promoção da engenharia em Angola.
+							DIRECÇÃO DE TELECOMUNICAÇÃO E TECNOLOGIA DE INFORMAÇÃO
 						</p>
 					</div>
 				</div>
 			</div>
 		</div>
 	</footer>
+
 
 
 
