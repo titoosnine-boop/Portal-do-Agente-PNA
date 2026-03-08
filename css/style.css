@@ -39,11 +39,7 @@
   --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
 
-* {
-
-
-
-}
+* {}
 
 @font-face {
   font-family: Noway-Light;
@@ -1192,7 +1188,7 @@ fieldset:disabled a.btn {
 }
 
 .navbar {
-  background: linear-gradient(#292E88,#151854) !important;
+  background: linear-gradient(#292E88, #151854) !important;
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1661,10 +1657,12 @@ a.close.disabled {
 }
 
 #candidaturaModal {
-    z-index: 2000; /* garante que fique acima de tudo */
+  z-index: 2000;
+  /* garante que fique acima de tudo */
 }
+
 .modal-backdrop {
-    z-index: 1999;
+  z-index: 1999;
 }
 
 .modal {
@@ -2461,7 +2459,8 @@ body {
   line-height: 1.8;
   font-weight: 400;
   color: #999999;
-  p{
+
+  p {
     font-family: 'Noway-Light', sans-serif !important;
   }
 }
@@ -2493,7 +2492,7 @@ h5,
   line-height: 1.5;
   color: rgba(0, 0, 0, 0.8);
   font-weight: 400;
-    font-family: 'Noway-Medium', sans-serif !important;
+  font-family: 'Noway-Medium', sans-serif !important;
 }
 
 .container {
@@ -5207,27 +5206,27 @@ textarea.form-control {
   }
 }
 
-.videe{
-  display:flex;
-  justify-content:center;
-  align-items:center;
-  padding:80px 0;
-  position:relative;
-  z-index:1;
+.videe {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 80px 0;
+  position: relative;
+  z-index: 1;
 }
 
-.videe video{
-  width:280px;
-  height:auto;
-  max-height:560px;
-  object-fit:contain;
-  border-radius:20px;
-  box-shadow:0 10px 25px rgba(0,0,0,0.3);
+.videe video {
+  width: 280px;
+  height: auto;
+  max-height: 560px;
+  object-fit: contain;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
 }
 
-footer{
-  position:relative;
-  z-index:2;
+footer {
+  position: relative;
+  z-index: 2;
 }
 
 .desk {
@@ -5237,5 +5236,50 @@ footer{
 @media (max-width: 1300px) {
   .desk {
     display: none;
+  }
+}
+
+.piips-menu {
+  margin-top: -20px;
+  border-radius: 3px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  animation: dropdownFade 0.3s ease;
+  background: rgba(0, 0, 0, 0.493) !important;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(42, 42, 42, 0.371);
+}
+
+.piips-menu .legending {
+  padding: 0px 10px;
+  font-size: 14px;
+  font-weight: bold;
+  transition: all .3s;
+  color: #fff;
+}
+
+.piips-menu .legending,
+.dropdown-item {
+  padding: 0px 10px;
+  font-size: 14px;
+  font-weight: 300;
+  transition: all .3s;
+  color: #fff;
+}
+
+.piips-menu .dropdown-item:hover {
+  background: #292E88;
+  color: white;
+  padding-left: 15px;
+}
+
+@keyframes dropdownFade {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
