@@ -5242,8 +5242,8 @@ footer {
 .piips-menu {
   margin-top: -20px;
   border-radius: 3px;
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
   animation: dropdownFade 0.3s ease;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
   background: rgba(0, 0, 0, 0.493) !important;
   backdrop-filter: blur(10px);
   border: 1px solid rgba(42, 42, 42, 0.371);
