@@ -53,6 +53,12 @@
 
 
 <body>
+    <div id="loader">
+        <div class="spinner-ring"></div>
+        <div class="spinner-logo">
+            <img src="img/logopolice1.png" alt="PNA">
+        </div>
+    </div>
     <!--::header part start::-->
     <header class="main_menu">
         <div class="container">
@@ -230,7 +236,7 @@
                 <div class="col-lg-12">
 
                     <div class="single_special_part border_left">
-                        <img src="img/icon/special_1.svg" alt="">
+                        <img src="img/icon/special_1.png" alt="" width="60px">
                         <div class="single_special_text">
                             <h3 style="color: white;">Comunicados</h3>
                             <p style="color: rgba(255, 255, 255, 0.673);">Avisos institucionais e informações oficiais
@@ -239,7 +245,7 @@
                     </div>
 
                     <div class="single_special_part border_left">
-                        <img src="img/icon/special_2.svg" alt="">
+                        <img src="img/icon/special_2.png" alt="" width="45px">
                         <div class="single_special_text">
                             <h3 style="color: white;">Serviços</h3>
                             <p style="color: rgba(255, 255, 255, 0.673);">Utilize ferramentas e sistemas internos que
@@ -248,7 +254,7 @@
                     </div>
 
                     <div class="single_special_part border_left">
-                        <img src="img/icon/special_3.svg" alt="">
+                        <img src="img/icon/special_3.png" alt="" width="40px">
                         <div class="single_special_text">
                             <h3 style="color: white;">Documentos</h3>
                             <p style="color: rgba(255, 255, 255, 0.673);">Consulte regulamentos, manuais, relatórios e
@@ -303,8 +309,8 @@
             <div class="row justify-content-between">
                 <div class="col-lg-9">
                     <div class="section_tittle">
-                        <h2 style="margin-top: 10px;">POLÍCIA NACIONAL DE ANGOLA</h2>
-                        <p>A garantia da ordem, a defesa da segurança e tranquilidade públicas, o asseguramento e
+                        <h2 style="margin-top: 50px; color: white;">POLÍCIA NACIONAL DE ANGOLA</h2>
+                        <p class="text-white">A garantia da ordem, a defesa da segurança e tranquilidade públicas, o asseguramento e
                             protecção das instituições, dos cidadãos e os respectivos bens, contra criminalidade
                             violenta ou organizada e outros tipos de ameaças e riscos, são fundamentos de valor sobre a
                             existência da Polícia Nacional de Angola. Enquanto Órgão de Estado, a Constituição da
@@ -446,7 +452,7 @@
                         </div>
 
                     </div>
-                    <div class="slider-counter"></div>
+              
                 </div>
             </div>
         </div>
@@ -468,9 +474,15 @@
 
                             <div class="blog_details">
                                 <a class="d-inline-block" href="single-blog.html">
-                                    <h2>COMANDANTE GERAL DESTACA CAPITAL HUMANO COMO PRINCIPAL PATRIMÓNIO NOS 50 ANOS DA PNA</h2>
+                                    <h2 class="text-white">COMANDANTE GERAL DESTACA CAPITAL HUMANO COMO PRINCIPAL PATRIMÓNIO NOS 50 ANOS DA
+                                        PNA</h2>
                                 </a>
-                                <p>O Comandante Geral da Polícia Nacional de Angola, Comissário-Geral Francisco Monteiro Ribas da Silva, afirmou, neste sábado, 28 de Fevereiro de 2026, que o capital humano continua a ser o principal património da corporação. A afirmação foi feita durante o acto central alusivo ao 50.º aniversário da instituição, realizado no Instituto Superior de Ciências Policiais e Criminais Osvaldo de Jesus Serra Van-Dúnem, em Luanda.</p>
+                                <p class="text-white">O Comandante Geral da Polícia Nacional de Angola, Comissário-Geral Francisco Monteiro
+                                    Ribas da Silva, afirmou, neste sábado, 28 de Fevereiro de 2026, que o capital humano
+                                    continua a ser o principal património da corporação. A afirmação foi feita durante o
+                                    acto central alusivo ao 50.º aniversário da instituição, realizado no Instituto
+                                    Superior de Ciências Policiais e Criminais Osvaldo de Jesus Serra Van-Dúnem, em
+                                    Luanda.</p>
                                 <ul class="blog-info-link">
                                     <li><a href="#">Saber mais</a></li>
                                 </ul>
@@ -595,6 +607,14 @@
         integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ=="
         data-cf-beacon='{"rayId":"97c99011fe6977dd","version":"2025.8.0","serverTiming":{"name":{"cfExtPri":true,"cfEdge":true,"cfOrigin":true,"cfL4":true,"cfSpeedBrain":true,"cfCacheStatus":true}},"token":"cd0b4b3a733644fc843ef0b185f98241","b":1}'
         crossorigin="anonymous"></script>
+
+    <script>
+        window.addEventListener("load", function () {
+            setTimeout(function () {
+                document.getElementById("loader").style.display = "none";
+            }, 3000); // 3 segundos
+        });
+    </script>
 </body>
 
 
