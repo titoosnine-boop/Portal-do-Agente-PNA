@@ -896,7 +896,7 @@ ul {
 .blog_details {
   padding: 30px 0 20px 10px;
   box-shadow: 0px 10px 20px 0px rgba(221, 221, 221, 0.3);
-    background: #0a1f44b0;
+  background: #0a1f44b0;
   backdrop-filter: blur(10px);
   color: white;
 }
@@ -2118,7 +2118,7 @@ ul {
   top: 0;
   left: 0;
   width: 100%;
-   background: #0a1f447d;
+  background: #0a1f447d;
   backdrop-filter: blur(10px);
 }
 
@@ -2322,7 +2322,7 @@ ul {
 
 /* line 8, ../../01 cl html template/New folder/May 2019/176 Interior Heaven/Interior Heaven Html/sass/_our_speciality.scss */
 .our_speciality .single_special_part {
-   background: #0a1f447d;
+  background: #0a1f447d;
   backdrop-filter: blur(10px);
   color: rgb(253, 253, 253) !important;
   width: 33.33%;
@@ -3160,7 +3160,7 @@ ul {
 
 /* line 27, ../../01 cl html template/New folder/May 2019/176 Interior Heaven/Interior Heaven Html/sass/_blog_post.scss */
 .blog_part .single_project_text {
-    background: #0a1f447d;
+  background: #0a1f447d;
   backdrop-filter: blur(10px);
   color: white;
   padding: 40px 50px 40px;
@@ -5884,6 +5884,10 @@ h6 {
   justify-content: center;
   align-items: center;
   z-index: 9999;
+
+  opacity: 1;
+  transition: opacity 0.8s ease;
+  /* suavidade */
 }
 
 /* spinner que gira */
@@ -5908,4 +5912,24 @@ h6 {
   100% {
     transform: rotate(360deg);
   }
+}
+
+.base {
+  animation: animar 0.3s linear;
+}
+
+@keyframes animar {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+/* quando for desaparecer */
+#loader.fade-out {
+  opacity: 0;
+  pointer-events: none;
 }

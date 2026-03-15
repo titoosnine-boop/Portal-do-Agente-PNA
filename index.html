@@ -51,14 +51,15 @@
     }
 </script>
 
-
-<body>
-    <div id="loader">
-        <div class="spinner-ring"></div>
-        <div class="spinner-logo">
-            <img src="img/logopolice1.png" alt="PNA">
-        </div>
+<div id="loader">
+    <div class="spinner-ring"></div>
+    <div class="spinner-logo">
+        <img src="img/logopolice1.png" alt="PNA">
     </div>
+</div>
+
+<body class="base">
+
     <!--::header part start::-->
     <header class="main_menu">
         <div class="container">
@@ -310,7 +311,8 @@
                 <div class="col-lg-9">
                     <div class="section_tittle">
                         <h2 style="margin-top: 50px; color: white;">POLÍCIA NACIONAL DE ANGOLA</h2>
-                        <p class="text-white">A garantia da ordem, a defesa da segurança e tranquilidade públicas, o asseguramento e
+                        <p class="text-white">A garantia da ordem, a defesa da segurança e tranquilidade públicas, o
+                            asseguramento e
                             protecção das instituições, dos cidadãos e os respectivos bens, contra criminalidade
                             violenta ou organizada e outros tipos de ameaças e riscos, são fundamentos de valor sobre a
                             existência da Polícia Nacional de Angola. Enquanto Órgão de Estado, a Constituição da
@@ -452,7 +454,7 @@
                         </div>
 
                     </div>
-              
+
                 </div>
             </div>
         </div>
@@ -474,10 +476,12 @@
 
                             <div class="blog_details">
                                 <a class="d-inline-block" href="single-blog.html">
-                                    <h2 class="text-white">COMANDANTE GERAL DESTACA CAPITAL HUMANO COMO PRINCIPAL PATRIMÓNIO NOS 50 ANOS DA
+                                    <h2 class="text-white">COMANDANTE GERAL DESTACA CAPITAL HUMANO COMO PRINCIPAL
+                                        PATRIMÓNIO NOS 50 ANOS DA
                                         PNA</h2>
                                 </a>
-                                <p class="text-white">O Comandante Geral da Polícia Nacional de Angola, Comissário-Geral Francisco Monteiro
+                                <p class="text-white">O Comandante Geral da Polícia Nacional de Angola, Comissário-Geral
+                                    Francisco Monteiro
                                     Ribas da Silva, afirmou, neste sábado, 28 de Fevereiro de 2026, que o capital humano
                                     continua a ser o principal património da corporação. A afirmação foi feita durante o
                                     acto central alusivo ao 50.º aniversário da instituição, realizado no Instituto
@@ -615,6 +619,24 @@
             }, 3000); // 3 segundos
         });
     </script>
+
+    <script>
+        window.addEventListener("load", function () {
+
+            setTimeout(function () {
+
+                const loader = document.getElementById("loader");
+                loader.classList.add("fade-out");
+
+                setTimeout(function () {
+                    loader.style.display = "none";
+                }, 800); // tempo igual ao CSS
+
+            }, 3000);
+
+        });
+    </script>
+
 </body>
 
 
