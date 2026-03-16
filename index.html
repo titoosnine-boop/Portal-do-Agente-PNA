@@ -64,8 +64,8 @@
     <header class="main_menu">
         <div class="container">
             <div class="topper">
-                <h5>POLÍCIA NACIONAL DE ANGOLA | <b>DIRECÇÃO DE TELECOMUNICAÇÃO E TECNOLOGIA DE INFORMAÇÃO</b>
-                    </h5>
+                <h5>POLÍCIA NACIONAL DE ANGOLA | <b>" PELA ORDEM E PELA PAZ, AO SERVIÇO DA NAÇÃO "</b>
+                </h5>
             </div>
 
             <div class="menu_bar">
@@ -92,9 +92,12 @@
                                         style="font-size: 14px; margin-left: 5px;"></i></a>
                                 <a class="dropdown-item" href="#">Organigrama</a>
                                 <a class="dropdown-item" href="#">Distintivos</a>
-                                <a class="dropdown-item" href="#">Regulamento</a>
+                                <a class="dropdown-item" href="#" data-toggle="modal"
+                                    data-target="#cartilhaModalRegulamento">Regulamento</a>
                                 <a class="dropdown-item" href="#">Lei de Base</a>
                                 <a class="dropdown-item" href="#">Legislação</a>
+                                <a class="dropdown-item" href="#" data-toggle="modal"
+                                    data-target="#cartilhaModal">Cartilha</a>
 
                             </div>
                         </li>
@@ -131,13 +134,14 @@
                                 <label class="legending"><b>Categorias</b></label>
                                 <a class="dropdown-item" href="index.html">Interpol<i class="fa-regular fa-circle-check"
                                         style="font-size: 14px; margin-left: 5px;"></i></a>
-                                <a class="dropdown-item" href="#">Afripol</a>
-                                <a class="dropdown-item" href="#">Minint</a>
-                                <a class="dropdown-item" href="#">Site | PNA</a>
-                                <a class="dropdown-item" href="#">Jurisnet</a>
-                                <a class="dropdown-item" href="#">SIC</a>
-                                <a class="dropdown-item" href="#">Minfin</a>
-                                <a class="dropdown-item" href="#">Minju</a>
+                                <a class="dropdown-item" target="_blank"
+                                    href="https://afripol.africa-union.org">Afripol</a>
+                                <a class="dropdown-item" target="_blank" href="https://minint.gov.ao">Minint</a>
+                                <a class="dropdown-item" target="_blank" href="https://pna.gov.ao">Site | PNA</a>
+                                <a class="dropdown-item" target="_blank" href="https://in.lexdata.co.ao/">Jurisnet</a>
+                                <a class="dropdown-item" target="_blank" href="https://sic.gov.ao">SIC</a>
+                                <a class="dropdown-item" target="_blank" href="https://www.minfin.gov.ao">Minfin</a>
+                                <a class="dropdown-item" target="_blank" href="https://10.20.120.254">Minju</a>
                             </div>
                         </li>
 
@@ -169,7 +173,7 @@
                     </ul>
                 </nav>
 
-                <div class="menu-toggle">
+                <div class="menu-toggle" style="display: none;">
                     ☰
                 </div>
 
@@ -272,13 +276,13 @@
             </div>
         </div>
     </div>
+
     <!-- banner part start-->
 
-    <!-- about part start-->
-    <div class="about_part section_bg">
+    <div class="about_part section_bg" style="padding-right: 40px;">
         <div class="container-fluid">
-            <div class="row justify-content-end">
-                <div class="col-lg-4 col-md-6">
+            <div class="row">
+                <div class="col-md-4">
                     <div class="about_part_text">
                         <h2>Portal Interno</h2>
                         <p>Plataforma digital da Polícia Nacional de Angola para acesso rápido a serviços, comunicados,
@@ -286,11 +290,70 @@
                         <a href="#" class="btn_1">Saber mais <span><img src="img/icon/left.svg" alt=""></span> </a>
                     </div>
                 </div>
-                <div class="col-lg-7 col-md-6">
-                    <div class="about_img">
-                        <img src="img/pna/bg1.jpg" alt="#">
+
+                <div class="col-md-4 mb-5 mb-lg-0">
+                    <div class="blog_left_sidebar">
+                        <article class="blog_item">
+                            <div class="blog_item_img">
+                                <div class="card-img about_video embed-responsive embed-responsive-16by9">
+                                    <iframe
+                                        src="https://www.youtube.com/embed/-C2-Pyvzpp4?autoplay=1&mute=1&loop=1&playlist=-C2-Pyvzpp4"
+                                        title="Vídeo Institucional" frameborder="0" allow="autoplay; encrypted-media"
+                                        allowfullscreen>
+                                    </iframe>
+                                </div>
+
+                            </div>
+
+                            <div class="blog_details">
+                                <a class="d-inline-block" href="#">
+                                    <h5 class="text-white">CONSELHO ÚTEIS DA POLÍCIA NACIONAL DE ANGOLA PARA AS QUADRAS
+                                        FESTIVAS
+                                    </h5>
+                                </a>
+                                <p class="text-white">Os últimos dias do ano geralmente são marcados por muitas
+                                    ocorrências que criam instabilidade pública. O Subcomissário Mateus Rodrigues,
+                                    Diretor Nacional Interino de Comunicação ...</p>
+                                <ul class="blog-info-link">
+                                    <li><a href="#">Saber mais</a></li>
+                                </ul>
+                            </div>
+                        </article>
+
                     </div>
                 </div>
+
+                <div class="col-md-4 mb-5 mb-lg-0">
+                    <div class="blog_left_sidebar">
+                        <article class="blog_item">
+                            <div class="blog_item_img">
+                                <img class="card-img rounded-0" src="img/pna/bg13.jpg" alt=""
+                                    style="height: 354px; object-fit: cover;">
+                                <a href="#" class="blog_item_date">
+                                    <h3>28</h3>
+                                    <p>Fev</p>
+                                </a>
+                            </div>
+
+                            <div class="blog_details">
+                                <a class="d-inline-block" href="#">
+                                    <h5 class="text-white">COMANDANTE GERAL DESTACA CAPITAL HUMANO COMO PRINCIPAL
+                                        PATRIMÓNIO NOS 50 ANOS DA
+                                        PNA</h5>
+                                </a>
+                                <p class="text-white">O Comandante Geral da Polícia Nacional de Angola, Comissário-Geral
+                                    Francisco Monteiro
+                                    Ribas da Silva, afirmou, neste sábado, 28 de Fevereiro de 2026, que o capital ...
+                                </p>
+                                <ul class="blog-info-link">
+                                    <li><a href="#">Saber mais</a></li>
+                                </ul>
+                            </div>
+                        </article>
+
+                    </div>
+                </div>
+
             </div>
         </div>
     </div>
@@ -298,11 +361,8 @@
 
 
     <!-- service part start-->
-    <section class="service_part">
-        <div class="container">
+    <section class="" style="height: 20px;">
 
-
-        </div>
     </section>
     <!-- service part end-->
 
@@ -338,14 +398,14 @@
                             <div class="row">
                                 <div class="col-lg-7">
                                     <div class="single_img">
-                                        <a href="blog.html"><img src="img/pna/bg10.jpg" alt="#"></a>
+                                        <a href="#"><img src="img/pna/bg10.jpg" alt="#"></a>
 
                                     </div>
                                 </div>
                                 <div class="col-lg-7">
                                     <div class="single_project_text">
                                         <div class="single_project_tittle">
-                                            <h4> <a href="blog.html">Definição e Natureza</a></h4>
+                                            <h4> <a href="#">Definição e Natureza</a></h4>
                                             <p></p>
 
                                         </div>
@@ -362,14 +422,14 @@
                             <div class="row">
                                 <div class="col-lg-7">
                                     <div class="single_img">
-                                        <a href="blog.html"><img src="img/pna/bg6.jpg" alt="#"></a>
+                                        <a href="#"><img src="img/pna/bg6.jpg" alt="#"></a>
 
                                     </div>
                                 </div>
                                 <div class="col-lg-7">
                                     <div class="single_project_text">
                                         <div class="single_project_tittle">
-                                            <h4> <a href="blog.html">Dependência</a></h4>
+                                            <h4> <a href="#">Dependência</a></h4>
                                             <p></p>
 
                                         </div>
@@ -387,14 +447,14 @@
                             <div class="row">
                                 <div class="col-lg-7">
                                     <div class="single_img">
-                                        <a href="blog.html"><img src="img/pna/bg7.jpg" alt="#"></a>
+                                        <a href="#"><img src="img/pna/bg7.jpg" alt="#"></a>
 
                                     </div>
                                 </div>
                                 <div class="col-lg-7">
                                     <div class="single_project_text">
                                         <div class="single_project_tittle">
-                                            <h4> <a href="blog.html">Princípios e Valores da Actividade da PNA</a></h4>
+                                            <h4> <a href="#">Princípios e Valores da Actividade da PNA</a></h4>
                                             <p></p>
 
                                         </div>
@@ -411,14 +471,14 @@
                             <div class="row">
                                 <div class="col-lg-7">
                                     <div class="single_img">
-                                        <a href="blog.html"><img src="img/pna/bg4.jpg" alt="#"></a>
+                                        <a href="#"><img src="img/pna/bg4.jpg" alt="#"></a>
 
                                     </div>
                                 </div>
                                 <div class="col-lg-7">
                                     <div class="single_project_text">
                                         <div class="single_project_tittle">
-                                            <h4> <a href="blog.html">Posicionamento Estratégico da PNA</a></h4>
+                                            <h4> <a href="#">Posicionamento Estratégico da PNA</a></h4>
                                             <p></p>
 
                                         </div>
@@ -437,14 +497,14 @@
                             <div class="row">
                                 <div class="col-lg-7">
                                     <div class="single_img">
-                                        <a href="blog.html"><img src="img/pna/bg15.jpg" alt="#"></a>
+                                        <a href="#"><img src="img/pna/bg15.jpg" alt="#"></a>
 
                                     </div>
                                 </div>
                                 <div class="col-lg-7">
                                     <div class="single_project_text">
                                         <div class="single_project_tittle">
-                                            <h4> <a href="blog.html">Atribuições Essenciais</a></h4>
+                                            <h4> <a href="#">Atribuições Essenciais</a></h4>
                                             <p></p>
 
                                         </div>
@@ -465,10 +525,14 @@
         </div>
     </section>
 
-    <section class="blog_area section_padding">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 mb-5 mb-lg-0">
+    <div class="about_part section_bg" style="padding: 60px;">
+        <div class="container-fluid">
+            <div class="banner_text_iner" style="margin-top: 30px; border-bottom: 2px solid #E9A202;">
+                <h1 style="font-weight: bold;">Vitrine e Destaques</h1>
+                <p>Espaço dedicado à apresentação de informações institucionais relevantes, <br>comunicados oficiais, iniciativas em destaque e recursos estratégicos da Polícia Nacional de Angola, promovendo maior acesso, transparência e apoio às actividades dos efectivos.</p>
+            </div>
+            <div class="row" style="margin-top: 20px;">
+                <div class="col-md-4 mb-5 mb-lg-0">
                     <div class="blog_left_sidebar">
                         <article class="blog_item">
                             <div class="blog_item_img">
@@ -480,18 +544,73 @@
                             </div>
 
                             <div class="blog_details">
-                                <a class="d-inline-block" href="single-blog.html">
-                                    <h2 class="text-white">COMANDANTE GERAL DESTACA CAPITAL HUMANO COMO PRINCIPAL
+                                <a class="d-inline-block" href="#">
+                                    <h5 class="text-white">COMANDANTE GERAL DESTACA CAPITAL HUMANO COMO PRINCIPAL
                                         PATRIMÓNIO NOS 50 ANOS DA
-                                        PNA</h2>
+                                        PNA</h5>
                                 </a>
                                 <p class="text-white">O Comandante Geral da Polícia Nacional de Angola, Comissário-Geral
                                     Francisco Monteiro
                                     Ribas da Silva, afirmou, neste sábado, 28 de Fevereiro de 2026, que o capital humano
-                                    continua a ser o principal património da corporação. A afirmação foi feita durante o
-                                    acto central alusivo ao 50.º aniversário da instituição, realizado no Instituto
-                                    Superior de Ciências Policiais e Criminais Osvaldo de Jesus Serra Van-Dúnem, em
-                                    Luanda.</p>
+                                    continua a ser o ..</p>
+                                <ul class="blog-info-link">
+                                    <li><a href="#">Saber mais</a></li>
+                                </ul>
+                            </div>
+                        </article>
+
+                    </div>
+                </div>
+                <div class="col-md-4 mb-5 mb-lg-0">
+                    <div class="blog_left_sidebar">
+                        <article class="blog_item">
+                            <div class="blog_item_img">
+                                <img class="card-img rounded-0" src="img/pna/bg13.jpg" alt="">
+                                <a href="#" class="blog_item_date">
+                                    <h3>15</h3>
+                                    <p>Jan</p>
+                                </a>
+                            </div>
+
+                            <div class="blog_details">
+                                <a class="d-inline-block" href="#">
+                                    <h5 class="text-white">COMANDANTE GERAL DESTACA CAPITAL HUMANO COMO PRINCIPAL
+                                        PATRIMÓNIO NOS 50 ANOS DA
+                                        PNA</h5>
+                                </a>
+                                <p class="text-white">O Comandante Geral da Polícia Nacional de Angola, Comissário-Geral
+                                    Francisco Monteiro
+                                    Ribas da Silva, afirmou, neste sábado, 28 de Fevereiro de 2026, que o capital humano
+                                    continua a ser o ..</p>
+                                <ul class="blog-info-link">
+                                    <li><a href="#">Saber mais</a></li>
+                                </ul>
+                            </div>
+                        </article>
+
+                    </div>
+                </div>
+                <div class="col-md-4 mb-5 mb-lg-0">
+                    <div class="blog_left_sidebar">
+                        <article class="blog_item">
+                            <div class="blog_item_img">
+                                <img class="card-img rounded-0" src="img/pna/bg13.jpg" alt="">
+                                <a href="#" class="blog_item_date">
+                                    <h3>15</h3>
+                                    <p>Jan</p>
+                                </a>
+                            </div>
+
+                            <div class="blog_details">
+                                <a class="d-inline-block" href="#">
+                                    <h5 class="text-white">COMANDANTE GERAL DESTACA CAPITAL HUMANO COMO PRINCIPAL
+                                        PATRIMÓNIO NOS 50 ANOS DA
+                                        PNA</h5>
+                                </a>
+                                <p class="text-white">O Comandante Geral da Polícia Nacional de Angola, Comissário-Geral
+                                    Francisco Monteiro
+                                    Ribas da Silva, afirmou, neste sábado, 28 de Fevereiro de 2026, que o capital humano
+                                    continua a ser o ..</p>
                                 <ul class="blog-info-link">
                                     <li><a href="#">Saber mais</a></li>
                                 </ul>
@@ -502,7 +621,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </div>
     <!-- blog part end-->
 
     <!-- contact us part end-->
@@ -641,6 +760,75 @@
 
         });
     </script>
+
+    <!-- Modal Cartilha -->
+    <div class="modal fade" id="cartilhaModal" tabindex="-1" role="dialog">
+
+        <div class="modal-dialog modal-xl" role="document">
+
+            <div class="modal-content">
+
+                <div class="modal-header">
+
+                    <h5 class="modal-title text-white">CARTILHA DE COMPORTAMENTO POLICIAL CORRECTO</h5>
+
+                    <!--  <a href="pdf/1ª CARTILHA_COMPORTAMENTO POLICIAL CORRECTO.pdf" download class="btn btn-primary">
+                        Baixar PDF
+                    </a> -->
+
+                    <button type="button" class="close" data-dismiss="modal">
+                        <span>&times;</span>
+                    </button>
+
+                </div>
+
+                <div class="modal-body p-0">
+
+                    <iframe src="pdf/1ª CARTILHA_COMPORTAMENTO POLICIAL CORRECTO.pdf" width="100%" height="700px"
+                        style="border:none;">
+                    </iframe>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Modal Cartilha Regulamento -->
+    <div class="modal fade" id="cartilhaModalRegulamento" tabindex="-1" role="dialog">
+
+        <div class="modal-dialog modal-xl" role="document">
+
+            <div class="modal-content">
+
+                <div class="modal-header">
+
+                    <h5 class="modal-title text-white">REGULAMENTO DE DISCIPLINA DA POLÍCIA NACIONAL</h5>
+
+                    <!--  <a href="pdf/1ª CARTILHA_COMPORTAMENTO POLICIAL CORRECTO.pdf" download class="btn btn-primary">
+                        Baixar PDF
+                    </a> -->
+
+                    <button type="button" class="close" data-dismiss="modal">
+                        <span>&times;</span>
+                    </button>
+
+                </div>
+
+                <div class="modal-body p-0">
+
+                    <iframe src="pdf/regulamentopna.pdf" width="100%" height="700px" style="border:none;">
+                    </iframe>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
 
 </body>
 
