@@ -5985,18 +5985,19 @@ h6 {
 }
 
 .about_video {
-    max-width: 331px;
     margin: auto;
 }
 
 .about_video iframe {
     width: 100%;
-    aspect-ratio: 9 / 16;
+    height: 349px;
 }
 
 .meu-video {
+  padding: 20px;
     width: 100%;
     max-width: 350px;
+    height: 592px;
     aspect-ratio: 9 / 16;
     object-fit: cover;
     display: block;
