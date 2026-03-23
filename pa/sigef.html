@@ -1,0 +1,1091 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<script>(function (w, i, g) { w[g] = w[g] || []; if (typeof w[g].push == 'function') w[g].push(i) })
+			(window, 'G-SEKJ4E9T4H', 'google_tags_first_party');</script>
+	<script async src="https://preview.colorlib.com/s9cc/"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() { dataLayer.push(arguments); }
+		gtag('js', new Date());
+		gtag('set', 'developer_id.dYzg1YT', true);
+		gtag('config', 'G-SEKJ4E9T4H');
+	</script>
+
+	<!-- Condigo de mudar a imagem do logotipo com scroll -->
+	<script>
+		let lastScrollY = 0;
+		let ticking = false;
+
+		window.addEventListener("scroll", function () {
+			lastScrollY = window.scrollY;
+
+			if (!ticking) {
+				window.requestAnimationFrame(function () {
+					const navbar = document.querySelector(".ftco-navbar-dark");
+					const logo = document.querySelector(".navbar-brand img");
+
+					if (lastScrollY > 50) {
+						navbar.classList.add("scrolled");
+						logo.setAttribute("src", "../eroo/images/logopolice1.png");
+					} else {
+						navbar.classList.remove("scrolled");
+						logo.setAttribute("src", "../eroo/images/logopolice1.png");
+					}
+
+					ticking = false;
+				});
+
+				ticking = true;
+			}
+		});
+
+	</script>
+
+	<title>PA - PORTAL DO AGENTE</title>
+	<link rel="icon" href="images/favicon.png">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<link
+		href="https://fonts.googleapis.com/css2?family=Arizonia&amp;family=Roboto:wght@300;400;500;700;900&amp;display=swap"
+		rel="stylesheet">
+
+	<link
+		href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&amp;display=swap"
+		rel="stylesheet">
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+	<link rel="stylesheet"
+		href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+
+
+	<link rel="stylesheet" href="../../../stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+	<!-- Font Awesome 6 -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+
+	<!-- Flaticon (exemplo de um pack de ícones) -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/felippe-regazio/flaticon-css/flaticon.css">
+	<link href="https://fonts.cdnfonts.com/css/noway" rel="stylesheet">
+
+
+
+	<link rel="stylesheet" href="css/animate.css">
+
+	<link rel="stylesheet" href="css/owl.carousel.min.css">
+	<link rel="stylesheet" href="css/owl.theme.default.min.css">
+	<link rel="stylesheet" href="css/magnific-popup.css">
+
+	<link rel="stylesheet" href="css/flaticon.css">
+	<link rel="stylesheet" href="css/style.css">
+
+	<link href="https://vjs.zencdn.net/8.10.0/video-js.css" rel="stylesheet" />
+	<script src="https://vjs.zencdn.net/8.10.0/video.min.js"></script>
+
+</head>
+
+<script>
+	const images = document.querySelectorAll('.zoom-img');
+	const modal = document.getElementById('zoomModal');
+	const modalImg = document.getElementById('zoomedImage');
+
+	images.forEach(img => {
+		img.addEventListener('click', () => {
+			modal.style.display = 'flex';
+			modalImg.src = img.src;
+		});
+	});
+
+	modal.addEventListener('click', () => {
+		modal.style.display = 'none';
+	});
+</script>
+
+<body>
+
+	<div class="wrap">
+		<div class="container">
+			<div class="row justify-content-between">
+				<div class="col-12 col-md d-flex align-items-center">
+					<p class="mb-0 phone"><span class="mailus"></span> <a href="#">POLÍCIA NACIONAL DE ANGOLA |
+							<b>DIRECÇÃO
+								DE TELECOMUNICAÇÃO E TECNOLOGIA DE INFORMAÇÃO</b> </a> <a href="#"></a>
+					</p>
+				</div>
+				<div class="col-12 col-md d-flex justify-content-md-end">
+					<!-- <div class="social-media">
+						<p class="mb-0 d-flex">
+							<a href="#" class="d-flex align-items-center justify-content-center"><span
+									class="fa fa-facebook"><i class="sr-only">Facebook</i></span></a>
+							<a href="#" class="d-flex align-items-center justify-content-center"><span
+									class="fa fa-twitter"><i class="sr-only">Twitter</i></span></a>
+							<a href="#" class="d-flex align-items-center justify-content-center"><span
+									class="fa fa-instagram"><i class="sr-only">Instagram</i></span></a>
+							<a href="#" class="d-flex align-items-center justify-content-center"><span
+									class="fa fa-dribbble"><i class="sr-only">Dribbble</i></span></a>
+						</p>
+					</div> -->
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<nav class="navbar navbar-expand-lg ftco-navbar-light" id="ftco-navbar">
+		<div class="container">
+			<a class="navbar-brand" href="index-2.html"><img src="/images/logopolice1.png" alt="" width="60px"></a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav"
+				aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="oi oi-menu"></span> Menu
+			</button>
+
+			<div class="collapse navbar-collapse" id="ftco-nav">
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item active"><a href="index.html" class="nav-link"
+							style="color: rgb(255, 255, 255); font-weight: bold;">APRESENTAÇÃO</a>
+					</li>
+
+					<!-- <li class="nav-item"><a href="sobre-nos.html" class="nav-link">Sobre</a></li>
+					<li class="nav-item"><a href="candidatos.html" class="nav-link">Candidatos</a></li>
+					<li class="nav-item"><a href="portfolio.html" class="nav-link">Portfólio</a></li> -->
+					<!-- NOVO MENU PIIPS -->
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="piipsDropdown" role="button"
+							data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+							style="color: rgb(170, 136, 0); font-weight: bold; border-bottom: 2px solid rgb(247, 247, 247); box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15); background: rgba(0, 0, 0, 0.493) !important; backdrop-filter: blur(10px);">
+							PIIPS
+						</a>
+
+						<div class="dropdown-menu dropdown-menu-right piips-menu" aria-labelledby="piipsDropdown">
+							<label class="legending"><b>MÓDULOS</b></label>
+							<a class="dropdown-item" href="sigpq.html">SIGPQ</a>
+							<a class="dropdown-item" href="#">PA</a>
+							<a class="dropdown-item" href="../index.html">PIPNA</a>
+							<a class="dropdown-item" href="sigef.html"
+								style="background-color: rgb(170, 136, 0);">SIGEF</a>
+							<a class="dropdown-item" href="#">SIGDOC</a>
+							<a class="dropdown-item" href="#">SIGSS</a>
+							<a class="dropdown-item" href="#">SIGPJ</a>
+							<a class="dropdown-item" href="#">SIGIAC</a>
+							<a class="dropdown-item" href="#">SOGE</a>
+							<a class="dropdown-item" href="#">SIGLOG | SIGAE</a>
+							<a class="dropdown-item" href="#">SIGLOG | SIGV</a>
+							<a class="dropdown-item" href="#">SIGLOG | SIGVest</a>
+							<a class="dropdown-item" href="#">SIGT</a>
+							<label class="legending"><b>WEBSERVICE</b></label>
+							<a class="dropdown-item" href="#">CCD | ADMIN</a>
+							<a class="dropdown-item" href="#">CCD | DISPO</a>
+							<a class="dropdown-item" href="obsip.html">CCD | OBSIP</a>
+						</div>
+					</li>
+
+					<li class="nav-item active desk"><a href="portfolio.html" class="nav-link"
+							style="color: white;">GALERIA</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<!-- END nav -->
+
+	<section class="hero-wrap">
+		<div class="home-slider owl-carousel js-fullheight">
+			<!-- Slide 1 -->
+			<div class="slider-item js-fullheight" style="background-image:url(images/cddbgof.jpg);">
+				<div class="overlay"></div>
+				<div class="container">
+					<div class="row d-flex no-gutters slider-text js-fullheight align-items-center align-items-stretch">
+						<div class="col-md-7 ftco-animate d-flex align-items-center">
+							<div class="text w-100 mt-5">
+								<span class="subheading">Bem-vindo ao SIGEF</span>
+								<h1>SIGEF - SISTEMA INTEGRADO DE GESTÃO FORMATIVA</h1>
+								<p class="mb-4">É uma plataforma web multi-painel que gere todo o ciclo formativo dos
+									agentes da PNA. <br>
+									- Recrutamento e candidatura <br>
+									- Matrícula; <br>
+									- Formação militar/académica; <br>
+									- Avaliações; <br>
+									- Emissão de certificados e cartões de identificação.
+								</p>
+								<p>
+									<a href="#funcionalidades" class="btn btn-primary">SABER MAIS</a>
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- Slide 2 -->
+			<div class="slider-item js-fullheight" style="background-image:url(images/bgsigpqpiips.jpg);">
+				<div class="overlay"></div>
+				<div class="container">
+					<div class="row d-flex no-gutters slider-text js-fullheight align-items-center align-items-stretch">
+						<div class="col-md-7 ftco-animate d-flex align-items-center">
+							<div class="text w-100 mt-5">
+								<span class="subheading">PIIPS</span>
+								<h1>PIIPS - PLATAFORMA INTEGRADA DE INFORMAÇÕES POLICIAIS E SERVIÇOS</h1>
+								<p class="mb-4">
+									Plataforma tecnológica da Polícia Nacional de Angola que integra informações e
+									serviços policiais, facilitando o acesso, a partilha e a gestão estratégica de dados
+									para o reforço da segurança pública
+								</p>
+
+								<p>
+									<a href="#prints" class="btn btn-white">Saiba Mais</a>
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</section>
+
+	<section class="ftco-section ftco-services" id="funcionalidades">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6 d-flex align-self-stretch ftco-animate">
+					<div class="pb-4 heading-section heading-section-white">
+						<h2 class="mb-3">FUNCIONALIDADES DO SIGEF</h2>
+						<p class="mb-4">Apresentação das soluções Inovadoras que comportam o Sistema Integrado de Gestão
+							Formativa.</p>
+					</div>
+				</div>
+
+				<!-- Obras Públicas de Impacto -->
+				<div class="col-md-3 d-flex align-self-stretch ftco-animate">
+					<div class="services">
+						<div class="d-flex justify-content-end">
+							<div class="icon d-flex">
+								<i class="fa-solid fa-user-shield"></i></i>
+							</div>
+						</div>
+						<div class="media-body">
+							<h3 class="heading mb-3">Administração e Controlo</h3>
+						</div>
+						<a href="#" class="btn-custom d-flex align-items-center justify-content-center">
+							<span class="fa fa-chevron-right"></span>
+						</a>
+					</div>
+				</div>
+
+				<!-- Projeto de Infraestrutura -->
+				<div class="col-md-3 d-flex align-self-stretch ftco-animate">
+					<div class="services">
+						<div class="d-flex justify-content-end">
+							<div class="icon d-flex">
+								<i class="fa-solid fa-user-plus"></i>
+							</div>
+						</div>
+						<div class="media-body">
+							<h3 class="heading mb-3">Gestão de Candidatos</h3>
+						</div>
+						<a href="#" class="btn-custom d-flex align-items-center justify-content-center">
+							<span class="fa fa-chevron-right"></span>
+						</a>
+					</div>
+				</div>
+
+				<!-- Inovação em Engenharia -->
+				<div class="col-md-3 d-flex align-self-stretch ftco-animate">
+					<div class="services active">
+						<div class="d-flex justify-content-end">
+							<div class="icon d-flex">
+								<i class="fa-solid fa-user-graduate"></i>
+							</div>
+						</div>
+						<div class="media-body">
+							<h3 class="heading mb-3">Gestão <br> de Alunos</h3>
+						</div>
+						<a href="#" class="btn-custom d-flex align-items-center justify-content-center">
+							<span class="fa fa-chevron-right"></span>
+						</a>
+					</div>
+				</div>
+
+				<!-- Sustentabilidade e Ambiente -->
+				<div class="col-md-3 d-flex align-self-stretch ftco-animate">
+					<div class="services">
+						<div class="d-flex justify-content-end">
+							<div class="icon d-flex">
+								<i class="fa-solid fa-chalkboard-user"></i>
+							</div>
+						</div>
+						<div class="media-body">
+							<h3 class="heading mb-3">Gestão de <br> Formadores</h3>
+						</div>
+						<a href="#" class="btn-custom d-flex align-items-center justify-content-center">
+							<span class="fa fa-chevron-right"></span>
+						</a>
+					</div>
+				</div>
+
+
+				<!-- Investigação Científica -->
+				<div class="col-md-3 d-flex align-self-stretch ftco-animate">
+					<div class="services">
+						<div class="d-flex justify-content-end">
+							<div class="icon d-flex">
+								<i class="fa-solid fa-book-open"></i>
+							</div>
+						</div>
+						<div class="media-body">
+							<h3 class="heading mb-3">Gestão <br> Curricular</h3>
+						</div>
+						<a href="#" class="btn-custom d-flex align-items-center justify-content-center">
+							<span class="fa fa-chevron-right"></span>
+						</a>
+					</div>
+				</div>
+
+				<!-- Engenheiro do Ano -->
+				<div class="col-md-3 d-flex align-self-stretch ftco-animate">
+					<div class="services">
+						<div class="d-flex justify-content-end">
+							<div class="icon d-flex">
+								<i class="fa-solid fa-book-medical"></i>
+							</div>
+						</div>
+						<div class="media-body">
+							<h3 class="heading mb-3">Avaliações <br> acadêmicas</h3>
+						</div>
+						<a href="#" class="btn-custom d-flex align-items-center justify-content-center">
+							<span class="fa fa-chevron-right"></span>
+						</a>
+					</div>
+				</div>
+
+				<!-- Carreira Académica -->
+				<div class="col-md-3 d-flex align-self-stretch ftco-animate">
+					<div class="services">
+						<div class="d-flex justify-content-end">
+							<div class="icon d-flex">
+								<i class="fa-solid fa-calendar-check"></i>
+							</div>
+						</div>
+						<div class="media-body">
+							<h3 class="heading mb-3">Gestão <br> de Presenças</h3>
+						</div>
+						<a href="#" class="btn-custom d-flex align-items-center justify-content-center">
+							<span class="fa fa-chevron-right"></span>
+						</a>
+					</div>
+				</div>
+
+				<!-- Jovem Engenheiro Revelação -->
+				<div class="col-md-3 d-flex align-self-stretch ftco-animate">
+					<div class="services">
+						<div class="d-flex justify-content-end">
+							<div class="icon d-flex">
+								<i class="fa-solid fa-users"></i>
+							</div>
+						</div>
+						<div class="media-body">
+							<h3 class="heading mb-3">Gestão <br> de Turmas</h3>
+						</div>
+						<a href="#" class="btn-custom d-flex align-items-center justify-content-center">
+							<span class="fa fa-chevron-right"></span>
+						</a>
+					</div>
+				</div>
+
+				<div class="col-md-3 d-flex align-self-stretch ftco-animate">
+					<div class="services">
+						<div class="d-flex justify-content-end">
+							<div class="icon d-flex">
+								<i class="fa-solid fa-toolbox"></i>
+							</div>
+						</div>
+						<div class="media-body">
+							<h3 class="heading mb-3">Atribuição de Equipamentos</h3>
+						</div>
+						<a href="#" class="btn-custom d-flex align-items-center justify-content-center">
+							<span class="fa fa-chevron-right"></span>
+						</a>
+					</div>
+				</div>
+
+				<div class="col-md-3 d-flex align-self-stretch ftco-animate">
+					<div class="services">
+						<div class="d-flex justify-content-end">
+							<div class="icon d-flex">
+								<i class="fa-solid fa-file-lines"></i>
+							</div>
+						</div>
+						<div class="media-body">
+							<h3 class="heading mb-3">Gestão Documental</h3>
+						</div>
+						<a href="#" class="btn-custom d-flex align-items-center justify-content-center">
+							<span class="fa fa-chevron-right"></span>
+						</a>
+					</div>
+				</div>
+
+				<div class="col-md-3 d-flex align-self-stretch ftco-animate">
+					<div class="services">
+						<div class="d-flex justify-content-end">
+							<div class="icon d-flex">
+								<i class="fa-solid fa-calendar"></i>
+							</div>
+						</div>
+						<div class="media-body">
+							<h3 class="heading mb-3">Gestão de Anos Académicos</h3>
+						</div>
+						<a href="#" class="btn-custom d-flex align-items-center justify-content-center">
+							<span class="fa fa-chevron-right"></span>
+						</a>
+					</div>
+				</div>
+
+
+				<div class="col-md-3 d-flex align-self-stretch ftco-animate">
+					<div class="services">
+						<div class="d-flex justify-content-end">
+							<div class="icon d-flex">
+								<i class="fa-solid fa-building"></i>
+							</div>
+						</div>
+						<div class="media-body">
+							<h3 class="heading mb-3">Gestão de Instituições</h3>
+						</div>
+						<a href="#" class="btn-custom d-flex align-items-center justify-content-center">
+							<span class="fa fa-chevron-right"></span>
+						</a>
+					</div>
+				</div>
+
+				<div class="col-md-3 d-flex align-self-stretch ftco-animate">
+					<div class="services">
+						<div class="d-flex justify-content-end">
+							<div class="icon d-flex">
+								<i class="fa-solid fa-right-left"></i>
+							</div>
+						</div>
+						<div class="media-body">
+							<h3 class="heading mb-3">Gestão de Transferências</h3>
+						</div>
+						<a href="#" class="btn-custom d-flex align-items-center justify-content-center">
+							<span class="fa fa-chevron-right"></span>
+						</a>
+					</div>
+				</div>
+
+				<div class="col-md-3 d-flex align-self-stretch ftco-animate">
+					<div class="services">
+						<div class="d-flex justify-content-end">
+							<div class="icon d-flex">
+								<i class="fa-solid fa-file-export"></i>
+							</div>
+						</div>
+						<div class="media-body">
+							<h3 class="heading mb-3">Emissão de Relatórios</h3>
+						</div>
+						<a href="#" class="btn-custom d-flex align-items-center justify-content-center">
+							<span class="fa fa-chevron-right"></span>
+						</a>
+					</div>
+				</div>
+
+				<div class="col-md-3 d-flex align-self-stretch ftco-animate">
+					<div class="services">
+						<div class="d-flex justify-content-end">
+							<div class="icon d-flex">
+								<i class="fa-solid fa-certificate"></i>
+							</div>
+						</div>
+						<div class="media-body">
+							<h3 class="heading mb-3">Emissão de Certificados</h3>
+						</div>
+						<a href="#" class="btn-custom d-flex align-items-center justify-content-center">
+							<span class="fa fa-chevron-right"></span>
+						</a>
+					</div>
+				</div>
+
+				<div class="col-md-3 d-flex align-self-stretch ftco-animate">
+					<div class="services">
+						<div class="d-flex justify-content-end">
+							<div class="icon d-flex">
+								<i class="fa-solid fa-id-card"></i>
+							</div>
+						</div>
+						<div class="media-body">
+							<h3 class="heading mb-3">Cartões de Identificação</h3>
+						</div>
+						<a href="#" class="btn-custom d-flex align-items-center justify-content-center">
+							<span class="fa fa-chevron-right"></span>
+						</a>
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+
+	</section>
+
+	<section class="ftco-section ftco-faqs services-section bg-light">
+		<div class="overlay"></div>
+		<div class="container">
+			<div class="row d-flex" style="margin-top: -200px;">
+
+				<!-- Coluna da imagem + barras de progresso -->
+				<div class="col-md-6 mb-5 md-md-0 order-md-last">
+					<div class="img w-100 mb-4" style="background-image: url(images/sigef-dashboard.jpg);"></div>
+					<h2 class="heading-section2 mb-5 ftco-animate">
+						SIGEF – Sistema Integrado de Gestão Formativa | PNA <br>
+
+					</h2>
+					<p class="ftco-animate">
+						Excelência em Gestão Académica
+					</p>
+
+					<div class="row">
+						<div class="col-md-12 animate-box">
+							<div class="progress-wrap ftco-animate">
+								<h3>Gestão Completa de Alunos</h3>
+								<div class="progress">
+									<div class="progress-bar color-1" role="progressbar" aria-valuenow="95"
+										aria-valuemin="0" aria-valuemax="100" style="width:95%">
+										<span>95%</span>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-md-12 animate-box">
+							<div class="progress-wrap ftco-animate">
+								<h3>Gestão de Formadores e Turmas</h3>
+								<div class="progress">
+									<div class="progress-bar color-2" role="progressbar" aria-valuenow="90"
+										aria-valuemin="0" aria-valuemax="100" style="width:90%">
+										<span>90%</span>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-md-12 animate-box">
+							<div class="progress-wrap ftco-animate">
+								<h3>Avaliações e Relatórios</h3>
+								<div class="progress">
+									<div class="progress-bar color-3" role="progressbar" aria-valuenow="85"
+										aria-valuemin="0" aria-valuemax="100" style="width:85%">
+										<span>85%</span>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-md-12 animate-box">
+							<div class="progress-wrap ftco-animate">
+								<h3>Certificados e Cartões de Identificação</h3>
+								<div class="progress">
+									<div class="progress-bar color-4" role="progressbar" aria-valuenow="92"
+										aria-valuemin="0" aria-valuemax="100" style="width:92%">
+										<span>92%</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- Coluna do FAQ -->
+				<div class="col-md-6 heading-section pr-md-5 ftco-animate d-flex align-items-center">
+					<div class="w-100 mb-4 mb-md-0">
+						<span class="subheading">Perguntas Frequentes</span>
+						<h2 class="mb-5">FAQ <br>SIGEF</h2>
+
+						<div id="accordion" class="myaccordion w-100" aria-multiselectable="true">
+
+							<div class="card">
+								<div class="card-header p-0" id="headingOne">
+									<h2 class="mb-0">
+										<button
+											class="d-flex py-3 px-4 align-items-center justify-content-between btn btn-link"
+											data-toggle="collapse" data-target="#collapseOne" aria-expanded="true"
+											aria-controls="collapseOne">
+											<p class="mb-0">O que é o SIGEF?</p>
+											<i class="fa" aria-hidden="true"></i>
+										</button>
+									</h2>
+								</div>
+								<div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
+									data-parent="#accordion">
+									<div class="card-body py-3 px-0">
+										<p class="text-dark" style="font-weight: bold; color: #000000;">O SIGEF é uma
+											plataforma multi-painel para gestão formativa das Escolas da
+											PNA, incluindo candidatos, alunos, formadores, turmas, avaliações,
+											certificados e cartões de identificação.</p>
+									</div>
+								</div>
+							</div>
+
+							<div class="card">
+								<div class="card-header p-0" id="headingTwo">
+									<h2 class="mb-0">
+										<button
+											class="d-flex py-3 px-4 align-items-center justify-content-between btn btn-link collapsed"
+											data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false"
+											aria-controls="collapseTwo">
+											<p class="mb-0">Quais funcionalidades o sistema oferece?</p>
+											<i class="fa" aria-hidden="true"></i>
+										</button>
+									</h2>
+								</div>
+								<div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
+									data-parent="#accordion">
+									<div class="card-body py-3 px-0">
+										<ul class="text-dark" style="font-weight: bold; color: #000000;">
+											<li>Gestão de Candidatos e Alunos</li>
+											<li>Gestão de Formadores e Turmas</li>
+											<li>Gestão Curricular e Avaliações Académicas</li>
+											<li>Gestão de Presenças</li>
+											<li>Emissão de Certificados e Cartões de Identificação</li>
+											<li>Relatórios PDF e Exportação de Dados</li>
+											<li>Multi-tenancy por instituição</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+
+							<div class="card">
+								<div class="card-header p-0" id="headingThree">
+									<h2 class="mb-0">
+										<button
+											class="d-flex py-3 px-4 align-items-center justify-content-between btn btn-link collapsed"
+											data-toggle="collapse" data-target="#collapseThree" aria-expanded="false"
+											aria-controls="collapseThree">
+											<p class="mb-0">Quem pode utilizar o SIGEF?</p>
+											<i class="fa" aria-hidden="true"></i>
+										</button>
+									</h2>
+								</div>
+								<div id="collapseThree" class="collapse" aria-labelledby="headingThree"
+									data-parent="#accordion">
+									<div class="card-body py-3 px-0">
+										<p class="text-dark" style="font-weight: bold; color: #000000;">Administradores,
+											super-administradores e utilizadores de cada escola podem
+											acessar os painéis com permissões específicas, incluindo painéis Admin,
+											Escola, Comando e DPQ.</p>
+									</div>
+								</div>
+							</div>
+
+							<div class="card">
+								<div class="card-header p-0" id="headingFour">
+									<h2 class="mb-0">
+										<button
+											class="d-flex py-3 px-4 align-items-center justify-content-between btn btn-link collapsed"
+											data-toggle="collapse" data-target="#collapseFour" aria-expanded="false"
+											aria-controls="collapseFour">
+											<p class="mb-0">Como o SIGEF ajuda na gestão académica?</p>
+											<i class="fa" aria-hidden="true"></i>
+										</button>
+									</h2>
+								</div>
+								<div id="collapseFour" class="collapse" aria-labelledby="headingFour"
+									data-parent="#accordion">
+									<div class="card-body py-3 px-0">
+										<p class="text-dark" style="font-weight: bold; color: #000000;">O SIGEF
+											automatiza processos como matrícula, inscrição em disciplinas,
+											avaliação, presenças, emissão de certificados e cartões de identificação,
+											garantindo eficiência e auditoria completa das ações.</p>
+									</div>
+								</div>
+							</div>
+
+						</div>
+
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</section>
+
+	<!-- PRINTS -->
+
+	<section class="ftco-section" id="prints">
+		<div class="container">
+			<div class="row no-gutters pb-5 justify-content-between">
+				<div class="col-md-7 col-lg-6 heading-section ftco-animate">
+					<span class="subheading">SIGEF</span>
+					<h2 class="mb-4">Interfaces Principais</h2>
+				</div>
+				<div class="col-md-3 col-lg-2 d-flex align-items-center">
+
+				</div>
+			</div>
+		</div>
+		<div class="container container-2">
+			<div class="row d-flex">
+
+				<div class="col-lg-6 ftco-animate">
+					<div class="blog-entry">
+						<a href="#" class="block-20" style="background-image: url('images/sigef/Tela\ de\ Login.png');">
+						</a>
+						<div class="text d-block text-center"
+							style="background: #0a1f44df; backdrop-filter: blur(10px);">
+							<div class="meta"
+								style="background: #0a1f448c; backdrop-filter: blur(10px); border: 1PX solid #030d1f8c;">
+								<p class="text-white">
+									<a href="#" style="color: white; font-size: 18px; font-weight: bold;">
+										<span class="mr-2 text-white">
+										</span>LOGIN
+									</a>
+								</p>
+							</div>
+							<p style="color: whitesmoke;">Intefrace inicial do projecto, que possibilita o acesso ao
+								sistema com uma validação de segurança.</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-lg-6 ftco-animate">
+					<div class="blog-entry">
+						<a href="#" class="block-20"
+							style="background-image: url('images/sigef/PAINEL\ DE\ CONTROLO.png');">
+						</a>
+						<div class="text d-block text-center"
+							style="background: #0a1f44df; backdrop-filter: blur(10px);">
+							<div class="meta"
+								style="background: #0a1f448c; backdrop-filter: blur(10px); border: 1PX solid #030d1f8c;">
+								<p class="text-white">
+									<a href="#" style="color: white; font-size: 18px; font-weight: bold;">
+										<span class="mr-2 text-white">
+										</span>PAINEL DE CONTROLO PRINCIPAL
+									</a>
+								</p>
+							</div>
+							<p style="color: whitesmoke;">Acesso centralizado para super administradores. Gere todas as
+								instituições, utilizadores, cursos, e visualiza
+								dados globais.</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-lg-6 ftco-animate">
+					<div class="blog-entry">
+						<a href="#" class="block-20" style="background-image: url('images/sigef/DASHBOARD.png');">
+						</a>
+						<div class="text d-block text-center"
+							style="background: #0a1f44df; backdrop-filter: blur(10px);">
+							<div class="meta"
+								style="background: #0a1f448c; backdrop-filter: blur(10px); border: 1PX solid #030d1f8c;">
+								<p class="text-white">
+									<a href="#" style="color: white; font-size: 18px; font-weight: bold;">
+										<span class="mr-2 text-white">
+										</span>PAINEL DE CONTROLO DA ESCOLA
+									</a>
+								</p>
+							</div>
+							<p style="color: whitesmoke;">Painel multi-tenant por instituição. Cada escola gere os seus
+								próprios alunos, formadores, turmas, avaliações, e
+								documentos. </p>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-lg-6 ftco-animate">
+					<div class="blog-entry">
+						<a href="#" class="block-20" style="background-image: url('images/sigef/PAUTA\ GERAL.png');">
+						</a>
+						<div class="text d-block text-center"
+							style="background: #0a1f44df; backdrop-filter: blur(10px);">
+							<div class="meta"
+								style="background: #0a1f448c; backdrop-filter: blur(10px); border: 1PX solid #030d1f8c;">
+								<p class="text-white">
+									<a href="#" style="color: white; font-size: 18px; font-weight: bold;">
+										<span class="mr-2 text-white">
+										</span>PAUTA GERAL
+									</a>
+								</p>
+							</div>
+							<p style="color: whitesmoke;">Pauta geral de notas de avaliação de desempenho curricular do
+								alunos registados nas escolas </p>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-lg-6 ftco-animate">
+					<div class="blog-entry">
+						<a href="#" class="block-20"
+							style="background-image: url('images/sigef/CADASTRO\ DE\ ALISTADOS\ E\ IMPORTAÇÃO\ EM\ MASSA.png');">
+						</a>
+						<div class="text d-block text-center"
+							style="background: #0a1f44df; backdrop-filter: blur(10px);">
+							<div class="meta"
+								style="background: #0a1f448c; backdrop-filter: blur(10px); border: 1PX solid #030d1f8c;">
+								<p class="text-white">
+									<a href="#" style="color: white; font-size: 18px; font-weight: bold;">
+										<span class="mr-2 text-white">
+										</span>CADASTRO DE ALISTADO
+									</a>
+								</p>
+							</div>
+							<p style="color: whitesmoke;">Formulário de registo de um alistado preveniente da sociedade
+								civil para frequentar um curso </p>
+						</div>
+					</div>
+				</div>
+
+
+				<div class="col-lg-6 ftco-animate">
+					<div class="blog-entry">
+						<a href="#" class="block-20"
+							style="background-image: url('images/sigef/CADASTRO\ DE\ CADETES\ E\ IMPORTAÇÃO\ EM\ MASSA..png');">
+						</a>
+						<div class="text d-block text-center"
+							style="background: #0a1f44df; backdrop-filter: blur(10px);">
+							<div class="meta"
+								style="background: #0a1f448c; backdrop-filter: blur(10px); border: 1PX solid #030d1f8c;">
+								<p class="text-white">
+									<a href="#" style="color: white; font-size: 18px; font-weight: bold;">
+										<span class="mr-2 text-white">
+										</span>CADASTRO DE CADETE E IMPORTAÇÃO EM MASSA
+									</a>
+								</p>
+							</div>
+							<p style="color: whitesmoke;">Formulário de registo de cadetes para frequentar um
+								determinado curso de ciências Policiais. </p>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-lg-6 ftco-animate">
+					<div class="blog-entry">
+						<a href="#" class="block-20"
+							style="background-image: url('images/sigef/CADASTRO\ DE\ FORMADORES\ EM\ ETAPAS\ E\ IMPORTAÇÃO\ EM\ MASSA.png');">
+						</a>
+						<div class="text d-block text-center"
+							style="background: #0a1f44df; backdrop-filter: blur(10px);">
+							<div class="meta"
+								style="background: #0a1f448c; backdrop-filter: blur(10px); border: 1PX solid #030d1f8c;">
+								<p class="text-white">
+									<a href="#" style="color: white; font-size: 18px; font-weight: bold;">
+										<span class="mr-2 text-white">
+										</span>CADASTRO DE FORMADORES EM ETAPAS E IMPORTAÇÃO
+									</a>
+								</p>
+							</div>
+							<p style="color: whitesmoke;">Formulário de registo de formadores em etapas ou importação em
+								massa para administrar um determinado curso. </p>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-lg-6 ftco-animate">
+					<div class="blog-entry">
+						<a href="#" class="block-20"
+							style="background-image: url('images/sigef/CADASTRO\ DE\ INSTIUIÇÕES.png');">
+						</a>
+						<div class="text d-block text-center"
+							style="background: #0a1f44df; backdrop-filter: blur(10px);">
+							<div class="meta"
+								style="background: #0a1f448c; backdrop-filter: blur(10px); border: 1PX solid #030d1f8c;">
+								<p class="text-white">
+									<a href="#" style="color: white; font-size: 18px; font-weight: bold;">
+										<span class="mr-2 text-white">
+										</span>CADASTRO DE INSTITUIÇÕES
+									</a>
+								</p>
+							</div>
+							<p style="color: whitesmoke;">Formulário de registo de Instituições que serão responsáveis
+								de albergar os formandos e ministrar os cursos de Polícia. </p>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-lg-6 ftco-animate">
+					<div class="blog-entry">
+						<a href="#" class="block-20"
+							style="background-image: url('images/sigef/IMPRESSÃO\ DE\ CARTÃO\ DE\ ALUNO.png');">
+						</a>
+						<div class="text d-block text-center"
+							style="background: #0a1f44df; backdrop-filter: blur(10px);">
+							<div class="meta"
+								style="background: #0a1f448c; backdrop-filter: blur(10px); border: 1PX solid #030d1f8c;">
+								<p class="text-white">
+									<a href="#" style="color: white; font-size: 18px; font-weight: bold;">
+										<span class="mr-2 text-white">
+										</span>EMISSÃO DO CARTÃO DO ALUNO
+									</a>
+								</p>
+							</div>
+							<p style="color: whitesmoke;">Interface de emissão do cartão de identificação do aluno no
+								recinto da instituição enquanto frequenta o curso </p>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-lg-6 ftco-animate">
+					<div class="blog-entry">
+						<a href="#" class="block-20" style="background-image: url('images/sigef/Certificado.png');">
+						</a>
+						<div class="text d-block text-center"
+							style="background: #0a1f44df; backdrop-filter: blur(10px);">
+							<div class="meta"
+								style="background: #0a1f448c; backdrop-filter: blur(10px); border: 1PX solid #030d1f8c;">
+								<p class="text-white">
+									<a href="#" style="color: white; font-size: 18px; font-weight: bold;">
+										<span class="mr-2 text-white">
+										</span>CERTIFICADO DE CONCLUSÃO DO CURSO
+									</a>
+								</p>
+							</div>
+							<p style="color: whitesmoke;">Documento responsável de comprovar a veracidade da frequência
+								do curso da Polícia Nacional de Angola. </p>
+						</div>
+					</div>
+				</div>
+
+			</div>
+
+		</div>
+
+	</section>
+
+	<style>
+		.frco-animate {
+			a {
+				.fab:hover {
+					color: red;
+				}
+			}
+		}
+	</style>
+
+	<footer class="ftco-footer">
+
+
+		<script>
+			videojs('meu-player', {
+				fluid: true,           // responsivo automático
+				controls: true,
+				autoplay: false,
+				muted: false
+			});
+		</script>
+
+		<!-- Copyright -->
+		<div class="container-fluid px-0 py-5 bg-black">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<p class="mb-0" style="color: rgba(255,255,255,.5);">
+							Copyright &copy;
+							<script>document.write(new Date().getFullYear());</script> <b>PIIPS - Portal Integrado de
+								Informações Policiais e Serviços.</b>
+							Todos os direitos reservados.
+							<br>
+							DIRECÇÃO DE TELECOMUNICAÇÃO E TECNOLOGIA DE INFORMAÇÃO
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<!-- loader -->
+	<div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px">
+			<circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee" />
+			<circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10"
+				stroke="#F96D00" />
+		</svg></div>
+
+
+	<script src="js/jquery.min.js"></script>
+	<script src="js/jquery-migrate-3.0.1.min.js"></script>
+	<script src="js/popper.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/jquery.easing.1.3.js"></script>
+	<script src="js/jquery.waypoints.min.js"></script>
+	<script src="js/jquery.stellar.min.js"></script>
+	<script src="js/owl.carousel.min.js"></script>
+	<script src="js/jquery.magnific-popup.min.js"></script>
+	<script src="js/jquery.animateNumber.min.js"></script>
+	<script src="js/scrollax.min.js"></script>
+	<script
+		src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&amp;sensor=false"></script>
+	<script src="js/google-map.js"></script>
+	<script src="js/main.js"></script>
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() { dataLayer.push(arguments); }
+		gtag('js', new Date());
+
+		gtag('config', 'UA-23581568-13');
+	</script>
+
+
+	<!-- Função do slide -->
+
+	<script>
+		$(window).on('load', function () {
+			var $c = $(".carousel-testimony");
+
+			// remove animações do template que podem esconder slides
+			$c.find('.item').removeClass('ftco-animate');
+
+			var count = $c.find('.item').length;
+			$c.owlCarousel({
+				loop: count > 3,
+				margin: 30,
+				autoplay: true,
+				autoplayTimeout: 8000,
+				autoplayHoverPause: true,
+				items: 1,
+				nav: false,
+				dots: true,
+				autoHeight: true,
+				responsive: {
+					0: { items: 1 },
+					768: { items: 2 },
+					1024: { items: 3 }
+				}
+			});
+
+			// recalc se o user redimensionar
+			$(window).on('resize orientationchange', function () {
+				$c.trigger('refresh.owl.carousel');
+			});
+		});
+	</script>
+
+	<style>
+		/* fallback para evitar espaços vazios */
+		.carousel-testimony .testimony-wrap {
+			min-height: 140px;
+		}
+
+		.carousel-testimony .user-img {
+			min-width: 70px;
+			min-height: 70px;
+			background-size: cover;
+			background-position: center;
+		}
+	</style>
+
+	<script defer
+		src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015"
+		integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ=="
+		data-cf-beacon='{"rayId":"97c9a16c8e2b77da","version":"2025.8.0","serverTiming":{"name":{"cfExtPri":true,"cfEdge":true,"cfOrigin":true,"cfL4":true,"cfSpeedBrain":true,"cfCacheStatus":true}},"token":"cd0b4b3a733644fc843ef0b185f98241","b":1}'
+		crossorigin="anonymous"></script>
+
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+</body>
+
+
+</html>
