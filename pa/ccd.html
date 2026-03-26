@@ -43,7 +43,7 @@
 
 	</script>
 
-	<title>PA - PORTAL DO AGENTE</title>
+	<title>CCD - APRESENTAÇÃO</title>
 	<link rel="icon" href="images/favicon.png">
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -87,23 +87,6 @@
 	<script src="https://vjs.zencdn.net/8.10.0/video.min.js"></script>
 
 </head>
-
-<script>
-	const images = document.querySelectorAll('.zoom-img');
-	const modal = document.getElementById('zoomModal');
-	const modalImg = document.getElementById('zoomedImage');
-
-	images.forEach(img => {
-		img.addEventListener('click', () => {
-			modal.style.display = 'flex';
-			modalImg.src = img.src;
-		});
-	});
-
-	modal.addEventListener('click', () => {
-		modal.style.display = 'none';
-	});
-</script>
 
 <body>
 
@@ -161,11 +144,11 @@
 
 						<div class="dropdown-menu dropdown-menu-right piips-menu" aria-labelledby="piipsDropdown">
 							<label class="legending"><b>MÓDULOS</b></label>
-							<a class="dropdown-item" href="sigpq.html">SIGPQ</a>
+							<a class="dropdown-item" href="sigpq.html"> SIGPQ <i class="fa-regular fa-circle-check"
+									style="font-size: 14px; margin-left: 5px;"></i></a>
 							<a class="dropdown-item" href="#">PA</a>
 							<a class="dropdown-item" href="../index.html">PIPNA</a>
-							<a class="dropdown-item" href="sigef.html"
-								style="background-color: rgb(170, 136, 0);">SIGEF</a>
+							<a class="dropdown-item" href="sigef.html">SIGEF</a>
 							<a class="dropdown-item" href="#">SIGDOC</a>
 							<a class="dropdown-item" href="#">SIGSS</a>
 							<a class="dropdown-item" href="#">SIGPJ</a>
@@ -176,9 +159,12 @@
 							<a class="dropdown-item" href="#">SIGLOG | SIGVest</a>
 							<a class="dropdown-item" href="#">SIGT</a>
 							<label class="legending"><b>WEBSERVICE</b></label>
-							<a class="dropdown-item" href="ccd.html">CCD | ADMIN</a>
+							<a class="dropdown-item" href="ccd.html" style="background-color: rgb(170, 136, 0);">CCD |
+								ADMIN</a>
 							<a class="dropdown-item" href="#">CCD | DISPO</a>
-							<a class="dropdown-item" href="obsip.html">CCD | OBSIP</a>
+							<a class="dropdown-item" href="obsip.html">CCD |
+								OBSIP <i class="fa-regular fa-circle-check"
+									style="font-size: 14px; margin-left: 5px;"></i></a>
 						</div>
 					</li>
 
@@ -191,6 +177,7 @@
 	</nav>
 	<!-- END nav -->
 
+	<!-- Landing - page -->
 	<section class="hero-wrap">
 		<div class="home-slider owl-carousel js-fullheight">
 			<!-- Slide 1 -->
@@ -200,18 +187,60 @@
 					<div class="row d-flex no-gutters slider-text js-fullheight align-items-center align-items-stretch">
 						<div class="col-md-7 ftco-animate d-flex align-items-center">
 							<div class="text w-100 mt-5">
-								<span class="subheading">Bem-vindo ao SIGEF</span>
-								<h1>SIGEF - SISTEMA INTEGRADO DE GESTÃO FORMATIVA</h1>
-								<p class="mb-4">É uma plataforma web multi-painel que gere todo o ciclo formativo dos
-									agentes da PNA. <br>
-									- Recrutamento e candidatura <br>
-									- Matrícula; <br>
-									- Formação militar/académica; <br>
-									- Avaliações; <br>
-									- Emissão de certificados e cartões de identificação.
+								<span class="subheading">Bem-vindo ao CCD</span>
+								<h1>CCD | ADMINISTRAÇÃO CENTRO DE CONSULTAS DE DADOS</h1>
+								<p class="mb-4">Ferramenta tecnológica da Polícia Nacional de Angola voltada para a
+									análise, monitorização e produção de dados estratégicos e Administrativos sobre a
+									atividade policial
 								</p>
 								<p>
-									<a href="#funcionalidades" class="btn btn-primary">SABER MAIS</a>
+									<a href="http://10.110.71.5:81/" target="_blank" class="btn btn-primary">ACESSAR A
+										PLATAFORMA</a>
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- Slide 1 -->
+			<div class="slider-item js-fullheight" style="background-image:url(images/cddbgof.jpg);">
+				<div class="overlay"></div>
+				<div class="container">
+					<div class="row d-flex no-gutters slider-text js-fullheight align-items-center align-items-stretch">
+						<div class="col-md-7 ftco-animate d-flex align-items-center">
+							<div class="text w-100 mt-5">
+								<span class="subheading">CCD</span>
+								<h1>CCD | OPERAÇÕES- DISPO CENTRO DE CONSULTAS DE DADOS</h1>
+								<p class="mb-4">Ferramenta tecnológica da Polícia Nacional de Angola voltada para a
+									análise, monitorização e produção de dados estratégicos e Operacionais sobre a
+									atividade policial
+								</p>
+								<p>
+									<a href="http://10.110.71.5:81/" target="_blank" class="btn btn-primary">ACESSAR A
+										PLATAFORMA</a>
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- Slide 1 -->
+			<div class="slider-item js-fullheight" style="background-image:url(images/cddbgof.jpg);">
+				<div class="overlay"></div>
+				<div class="container">
+					<div class="row d-flex no-gutters slider-text js-fullheight align-items-center align-items-stretch">
+						<div class="col-md-7 ftco-animate d-flex align-items-center">
+							<div class="text w-100 mt-5">
+								<span class="subheading">CCD</span>
+								<h1>CCD | OBSIP - OBSERVATÓRIO DE INFORMAÇÕES POLICIAIS E SERVIÇOS</h1>
+								<p class="mb-4">Ferramenta tecnológica da Polícia Nacional de Angola voltada para a
+									análise, monitorização e produção de dados estratégico sobre a atividade policial
+								</p>
+								<p>
+									<a href="http://10.110.71.5:81/" target="_blank" class="btn btn-primary">ACESSAR A
+										PLATAFORMA</a>
 								</p>
 							</div>
 						</div>
@@ -235,7 +264,8 @@
 								</p>
 
 								<p>
-									<a href="#prints" class="btn btn-white">Saiba Mais</a>
+									<a href="http://10.110.71.5/" target="_blank" class="btn btn-primary">ACESSAR A
+										PLATAFORMA</a>
 								</p>
 							</div>
 						</div>
@@ -251,9 +281,9 @@
 			<div class="row">
 				<div class="col-md-6 d-flex align-self-stretch ftco-animate">
 					<div class="pb-4 heading-section heading-section-white">
-						<h2 class="mb-3">FUNCIONALIDADES DO SIGEF</h2>
-						<p class="mb-4">Apresentação das soluções Inovadoras que comportam o Sistema Integrado de Gestão
-							Formativa.</p>
+						<h2 class="mb-3">FUNCIONALIDADES PRINCIPAIS DO CCD</h2>
+						<p class="mb-4">Apresentação das soluções Inovadoras que comportam o Centro de Consultas de
+							Dados.</p>
 					</div>
 				</div>
 
@@ -262,11 +292,11 @@
 					<div class="services">
 						<div class="d-flex justify-content-end">
 							<div class="icon d-flex">
-								<i class="fa-solid fa-user-shield"></i></i>
+								<i class="fa-solid fa-chalkboard-user"></i>
 							</div>
 						</div>
 						<div class="media-body">
-							<h3 class="heading mb-3">Administração e Controlo</h3>
+							<h3 class="heading mb-3">PAINEL DE CONTROLO [PIIPS]</h3>
 						</div>
 						<a href="#" class="btn-custom d-flex align-items-center justify-content-center">
 							<span class="fa fa-chevron-right"></span>
@@ -279,179 +309,11 @@
 					<div class="services">
 						<div class="d-flex justify-content-end">
 							<div class="icon d-flex">
-								<i class="fa-solid fa-user-plus"></i>
+								<i class="fa-solid fa-magnifying-glass"></i>
 							</div>
 						</div>
 						<div class="media-body">
-							<h3 class="heading mb-3">Gestão de Candidatos</h3>
-						</div>
-						<a href="#" class="btn-custom d-flex align-items-center justify-content-center">
-							<span class="fa fa-chevron-right"></span>
-						</a>
-					</div>
-				</div>
-
-				<!-- Inovação em Engenharia -->
-				<div class="col-md-3 d-flex align-self-stretch ftco-animate">
-					<div class="services active">
-						<div class="d-flex justify-content-end">
-							<div class="icon d-flex">
-								<i class="fa-solid fa-user-graduate"></i>
-							</div>
-						</div>
-						<div class="media-body">
-							<h3 class="heading mb-3">Gestão <br> de Alunos</h3>
-						</div>
-						<a href="#" class="btn-custom d-flex align-items-center justify-content-center">
-							<span class="fa fa-chevron-right"></span>
-						</a>
-					</div>
-				</div>
-
-				<!-- Sustentabilidade e Ambiente -->
-				<div class="col-md-3 d-flex align-self-stretch ftco-animate">
-					<div class="services">
-						<div class="d-flex justify-content-end">
-							<div class="icon d-flex">
-								<i class="fa-solid fa-chalkboard-user"></i>
-							</div>
-						</div>
-						<div class="media-body">
-							<h3 class="heading mb-3">Gestão de <br> Formadores</h3>
-						</div>
-						<a href="#" class="btn-custom d-flex align-items-center justify-content-center">
-							<span class="fa fa-chevron-right"></span>
-						</a>
-					</div>
-				</div>
-
-
-				<!-- Investigação Científica -->
-				<div class="col-md-3 d-flex align-self-stretch ftco-animate">
-					<div class="services">
-						<div class="d-flex justify-content-end">
-							<div class="icon d-flex">
-								<i class="fa-solid fa-book-open"></i>
-							</div>
-						</div>
-						<div class="media-body">
-							<h3 class="heading mb-3">Gestão <br> Curricular</h3>
-						</div>
-						<a href="#" class="btn-custom d-flex align-items-center justify-content-center">
-							<span class="fa fa-chevron-right"></span>
-						</a>
-					</div>
-				</div>
-
-				<!-- Engenheiro do Ano -->
-				<div class="col-md-3 d-flex align-self-stretch ftco-animate">
-					<div class="services">
-						<div class="d-flex justify-content-end">
-							<div class="icon d-flex">
-								<i class="fa-solid fa-book-medical"></i>
-							</div>
-						</div>
-						<div class="media-body">
-							<h3 class="heading mb-3">Avaliações <br> acadêmicas</h3>
-						</div>
-						<a href="#" class="btn-custom d-flex align-items-center justify-content-center">
-							<span class="fa fa-chevron-right"></span>
-						</a>
-					</div>
-				</div>
-
-				<!-- Carreira Académica -->
-				<div class="col-md-3 d-flex align-self-stretch ftco-animate">
-					<div class="services">
-						<div class="d-flex justify-content-end">
-							<div class="icon d-flex">
-								<i class="fa-solid fa-calendar-check"></i>
-							</div>
-						</div>
-						<div class="media-body">
-							<h3 class="heading mb-3">Gestão <br> de Presenças</h3>
-						</div>
-						<a href="#" class="btn-custom d-flex align-items-center justify-content-center">
-							<span class="fa fa-chevron-right"></span>
-						</a>
-					</div>
-				</div>
-
-				<!-- Jovem Engenheiro Revelação -->
-				<div class="col-md-3 d-flex align-self-stretch ftco-animate">
-					<div class="services">
-						<div class="d-flex justify-content-end">
-							<div class="icon d-flex">
-								<i class="fa-solid fa-users"></i>
-							</div>
-						</div>
-						<div class="media-body">
-							<h3 class="heading mb-3">Gestão <br> de Turmas</h3>
-						</div>
-						<a href="#" class="btn-custom d-flex align-items-center justify-content-center">
-							<span class="fa fa-chevron-right"></span>
-						</a>
-					</div>
-				</div>
-
-				<div class="col-md-3 d-flex align-self-stretch ftco-animate">
-					<div class="services">
-						<div class="d-flex justify-content-end">
-							<div class="icon d-flex">
-								<i class="fa-solid fa-toolbox"></i>
-							</div>
-						</div>
-						<div class="media-body">
-							<h3 class="heading mb-3">Atribuição de Equipamentos</h3>
-						</div>
-						<a href="#" class="btn-custom d-flex align-items-center justify-content-center">
-							<span class="fa fa-chevron-right"></span>
-						</a>
-					</div>
-				</div>
-
-				<div class="col-md-3 d-flex align-self-stretch ftco-animate">
-					<div class="services">
-						<div class="d-flex justify-content-end">
-							<div class="icon d-flex">
-								<i class="fa-solid fa-file-lines"></i>
-							</div>
-						</div>
-						<div class="media-body">
-							<h3 class="heading mb-3">Gestão Documental</h3>
-						</div>
-						<a href="#" class="btn-custom d-flex align-items-center justify-content-center">
-							<span class="fa fa-chevron-right"></span>
-						</a>
-					</div>
-				</div>
-
-				<div class="col-md-3 d-flex align-self-stretch ftco-animate">
-					<div class="services">
-						<div class="d-flex justify-content-end">
-							<div class="icon d-flex">
-								<i class="fa-solid fa-calendar"></i>
-							</div>
-						</div>
-						<div class="media-body">
-							<h3 class="heading mb-3">Gestão de Anos Académicos</h3>
-						</div>
-						<a href="#" class="btn-custom d-flex align-items-center justify-content-center">
-							<span class="fa fa-chevron-right"></span>
-						</a>
-					</div>
-				</div>
-
-
-				<div class="col-md-3 d-flex align-self-stretch ftco-animate">
-					<div class="services">
-						<div class="d-flex justify-content-end">
-							<div class="icon d-flex">
-								<i class="fa-solid fa-building"></i>
-							</div>
-						</div>
-						<div class="media-body">
-							<h3 class="heading mb-3">Gestão de Instituições</h3>
+							<h3 class="heading mb-3">Consulta de dados dos órgãos e Unidades territoriais</h3>
 						</div>
 						<a href="#" class="btn-custom d-flex align-items-center justify-content-center">
 							<span class="fa fa-chevron-right"></span>
@@ -467,7 +329,8 @@
 							</div>
 						</div>
 						<div class="media-body">
-							<h3 class="heading mb-3">Gestão de Transferências</h3>
+							<h3 class="heading mb-3">Cruzamento de dados de informações policiais dos efectivos da PNA
+							</h3>
 						</div>
 						<a href="#" class="btn-custom d-flex align-items-center justify-content-center">
 							<span class="fa fa-chevron-right"></span>
@@ -479,11 +342,12 @@
 					<div class="services">
 						<div class="d-flex justify-content-end">
 							<div class="icon d-flex">
-								<i class="fa-solid fa-file-export"></i>
+								<i class="fa-solid fa-eye"></i>
 							</div>
 						</div>
 						<div class="media-body">
-							<h3 class="heading mb-3">Emissão de Relatórios</h3>
+							<h3 class="heading mb-3">OBSIP - Observatório de Informações Policiais e Serviços da PNA
+							</h3>
 						</div>
 						<a href="#" class="btn-custom d-flex align-items-center justify-content-center">
 							<span class="fa fa-chevron-right"></span>
@@ -491,37 +355,7 @@
 					</div>
 				</div>
 
-				<div class="col-md-3 d-flex align-self-stretch ftco-animate">
-					<div class="services">
-						<div class="d-flex justify-content-end">
-							<div class="icon d-flex">
-								<i class="fa-solid fa-certificate"></i>
-							</div>
-						</div>
-						<div class="media-body">
-							<h3 class="heading mb-3">Emissão de Certificados</h3>
-						</div>
-						<a href="#" class="btn-custom d-flex align-items-center justify-content-center">
-							<span class="fa fa-chevron-right"></span>
-						</a>
-					</div>
-				</div>
 
-				<div class="col-md-3 d-flex align-self-stretch ftco-animate">
-					<div class="services">
-						<div class="d-flex justify-content-end">
-							<div class="icon d-flex">
-								<i class="fa-solid fa-id-card"></i>
-							</div>
-						</div>
-						<div class="media-body">
-							<h3 class="heading mb-3">Cartões de Identificação</h3>
-						</div>
-						<a href="#" class="btn-custom d-flex align-items-center justify-content-center">
-							<span class="fa fa-chevron-right"></span>
-						</a>
-					</div>
-				</div>
 
 			</div>
 		</div>
@@ -538,17 +372,17 @@
 				<div class="col-md-6 mb-5 md-md-0 order-md-last">
 					<div class="img w-100 mb-4" style="background-image: url(images/sigef-dashboard.jpg);"></div>
 					<h2 class="heading-section2 mb-5 ftco-animate">
-						SIGEF – Sistema Integrado de Gestão Formativa | PNA <br>
+						CCD – Centro de Consultas de Dados | PNA <br>
 
 					</h2>
 					<p class="ftco-animate">
-						Excelência em Gestão Académica
+						Inovação tecnológica para o auxílio na tomada de decisão
 					</p>
 
 					<div class="row">
 						<div class="col-md-12 animate-box">
 							<div class="progress-wrap ftco-animate">
-								<h3>Gestão Completa de Alunos</h3>
+								<h3>Painel de Controlo - Dashboard</h3>
 								<div class="progress">
 									<div class="progress-bar color-1" role="progressbar" aria-valuenow="95"
 										aria-valuemin="0" aria-valuemax="100" style="width:95%">
@@ -560,7 +394,7 @@
 
 						<div class="col-md-12 animate-box">
 							<div class="progress-wrap ftco-animate">
-								<h3>Gestão de Formadores e Turmas</h3>
+								<h3>Consultas de dados</h3>
 								<div class="progress">
 									<div class="progress-bar color-2" role="progressbar" aria-valuenow="90"
 										aria-valuemin="0" aria-valuemax="100" style="width:90%">
@@ -572,7 +406,7 @@
 
 						<div class="col-md-12 animate-box">
 							<div class="progress-wrap ftco-animate">
-								<h3>Avaliações e Relatórios</h3>
+								<h3>OBSIP</h3>
 								<div class="progress">
 									<div class="progress-bar color-3" role="progressbar" aria-valuenow="85"
 										aria-valuemin="0" aria-valuemax="100" style="width:85%">
@@ -582,17 +416,6 @@
 							</div>
 						</div>
 
-						<div class="col-md-12 animate-box">
-							<div class="progress-wrap ftco-animate">
-								<h3>Certificados e Cartões de Identificação</h3>
-								<div class="progress">
-									<div class="progress-bar color-4" role="progressbar" aria-valuenow="92"
-										aria-valuemin="0" aria-valuemax="100" style="width:92%">
-										<span>92%</span>
-									</div>
-								</div>
-							</div>
-						</div>
 					</div>
 				</div>
 
@@ -600,7 +423,7 @@
 				<div class="col-md-6 heading-section pr-md-5 ftco-animate d-flex align-items-center">
 					<div class="w-100 mb-4 mb-md-0">
 						<span class="subheading">Perguntas Frequentes</span>
-						<h2 class="mb-5">FAQ SIGEF</h2>
+						<h2 class="mb-5">FAQ CCD</h2>
 
 						<div id="accordion" class="myaccordion w-100" aria-multiselectable="true">
 
@@ -611,7 +434,7 @@
 											class="d-flex py-3 px-4 align-items-center justify-content-between btn btn-link"
 											data-toggle="collapse" data-target="#collapseOne" aria-expanded="true"
 											aria-controls="collapseOne">
-											<p class="mb-0">O que é o SIGEF?</p>
+											<p class="mb-0">O que é o CCD?</p>
 											<i class="fa" aria-hidden="true"></i>
 										</button>
 									</h2>
@@ -619,10 +442,11 @@
 								<div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
 									data-parent="#accordion">
 									<div class="card-body py-3 px-0">
-										<p class="text-dark" style="font-weight: bold; color: #000000;">O SIGEF é uma
-											plataforma multi-painel para gestão formativa das Escolas da
-											PNA, incluindo candidatos, alunos, formadores, turmas, avaliações,
-											certificados e cartões de identificação.</p>
+										<p class="text-dark" style="font-weight: bold; color: #000000;">O CCD é uma ferramenta
+											tecnológica da Polícia Nacional de Angola voltada para a
+											análise, monitoramento e produção de dados estratégicos sobre a atividade
+											policial, que auxilia na Administração e Operações da Polícia Nacional de
+											Angola</p>
 									</div>
 								</div>
 							</div>
@@ -643,13 +467,34 @@
 									data-parent="#accordion">
 									<div class="card-body py-3 px-0">
 										<ul class="text-dark" style="font-weight: bold; color: #000000;">
-											<li>Gestão de Candidatos e Alunos</li>
-											<li>Gestão de Formadores e Turmas</li>
-											<li>Gestão Curricular e Avaliações Académicas</li>
-											<li>Gestão de Presenças</li>
-											<li>Emissão de Certificados e Cartões de Identificação</li>
-											<li>Relatórios PDF e Exportação de Dados</li>
-											<li>Multi-tenancy por instituição</li>
+											<li>Painel de controlo dos módulos da PIIPS</li>
+											<li>Consultas de dados dos seguintes módulos:</li>
+											<p>SIGPQ - Sistema Integrado de Gestão de Pessoal e Quadros</p>
+											<p style="margin-top: -21px;">SIGPS - Sistema Integrado de Gestão de
+												Protecção Social</p>
+											<p style="margin-top: -21px;">SIGEF - Sistema Integrado de Gestão Formativa
+											</p>
+											<p style="margin-top: -21px;">SIGDOC - Sistema Integrado de Gestão
+												Documental</p>
+											<p style="margin-top: -21px;">SIGPJ - Sistema Integrado de Gestão de
+												Processos Jurídicos</p>
+											<p style="margin-top: -21px;">SIGIAC - Sistema Integrado de Gestão de
+												Inspecção ...</p>
+											<p style="margin-top: -21px;">SOGE - Sistema Operacional de Gestão de
+												Esquadras</p>
+											<p style="margin-top: -21px;">SIGAE - Sistema Integrado de Gestão de Armas e
+												Explosivos</p>
+											<p style="margin-top: -21px;">SIGV - Sistema Integrado de Gestão de Viveres
+											</p>
+											<p style="margin-top: -21px;">SIGVest - Sistema Integrado de Gestão de
+												Vestuários</p>
+											<p style="margin-top: -21px;">SIGT - Sistema Integrado de Gestão de
+												Transportes</p>
+											<p style="margin-top: -21px;">SIGSS - Sistema Integrado de Gestão de
+												Serviços de Saúde</p>
+											<p style="margin-top: -21px;">SRGIO - Sistema de Recolha e Gestão de Informações e Operações</p>
+											<li>Observatório de Informações Policiais</li>
+											<li>Análises Predetivas (Pendente de conclusão)</li>
 										</ul>
 									</div>
 								</div>
@@ -662,7 +507,7 @@
 											class="d-flex py-3 px-4 align-items-center justify-content-between btn btn-link collapsed"
 											data-toggle="collapse" data-target="#collapseThree" aria-expanded="false"
 											aria-controls="collapseThree">
-											<p class="mb-0">Quem pode utilizar o SIGEF?</p>
+											<p class="mb-0">Quem pode utilizar o CCD?</p>
 											<i class="fa" aria-hidden="true"></i>
 										</button>
 									</h2>
@@ -670,10 +515,15 @@
 								<div id="collapseThree" class="collapse" aria-labelledby="headingThree"
 									data-parent="#accordion">
 									<div class="card-body py-3 px-0">
-										<p class="text-dark" style="font-weight: bold; color: #000000;">Administradores,
-											super-administradores e utilizadores de cada escola podem
-											acessar os painéis com permissões específicas, incluindo painéis Admin,
-											Escola, Comando e DPQ.</p>
+										<p class="text-dark" style="font-weight: bold; color: #000000;">
+											<b>Comandante Geral</b> <br>
+											<b>2º Comandantes Gerais</b> <br>
+											<b>Comandante Provinciais</b> <br>
+											<b>Directores Nacionais</b> <br><br>
+											Somente o Nível estratégico da PNA, pode acessar os painéis com permissões
+											específicas, incluindo painéis Admin,
+											listagens e cruzamento de dados.
+										</p>
 									</div>
 								</div>
 							</div>
@@ -685,7 +535,7 @@
 											class="d-flex py-3 px-4 align-items-center justify-content-between btn btn-link collapsed"
 											data-toggle="collapse" data-target="#collapseFour" aria-expanded="false"
 											aria-controls="collapseFour">
-											<p class="mb-0">Como o SIGEF ajuda na gestão académica?</p>
+											<p class="mb-0">Como o CDD ajuda na tomada de decisão ?</p>
 											<i class="fa" aria-hidden="true"></i>
 										</button>
 									</h2>
@@ -693,10 +543,19 @@
 								<div id="collapseFour" class="collapse" aria-labelledby="headingFour"
 									data-parent="#accordion">
 									<div class="card-body py-3 px-0">
-										<p class="text-dark" style="font-weight: bold; color: #000000;">O SIGEF
-											automatiza processos como matrícula, inscrição em disciplinas,
-											avaliação, presenças, emissão de certificados e cartões de identificação,
-											garantindo eficiência e auditoria completa das ações.</p>
+										<p class="text-dark" style="font-weight: bold; color: #000000;">O Centro de
+											Consulta de Dados (CCD) da Polícia Nacional de Angola (PNA) desempenha um
+											papel essencial na tomada de decisão estratégica e operacional, ao fornecer
+											informações confiáveis, organizadas e acessíveis em tempo real. <br><br>
+
+											<b>1. Acesso rápido à informação</b> <br>
+											<b>2. Suporte à análise estratégica</b> <br>
+											<b>3. Melhoria da eficiência operacional</b> <br>
+											<b>4. Apoio à gestão e administração</b> <br>
+											<b>5. Monitoramento contínuo</b> <br>
+											<b>6. Redução de riscos e erros </b><br>
+											<b>7. Produção de relatórios e indicadores</b>
+										</p>
 									</div>
 								</div>
 							</div>
@@ -712,7 +571,7 @@
 
 	<!-- PRINTS -->
 
-	<section class="ftco-section" id="prints">
+	<!-- <section class="ftco-section" id="prints">
 		<div class="container">
 			<div class="row no-gutters pb-5 justify-content-between">
 				<div class="col-md-7 col-lg-6 heading-section ftco-animate">
@@ -750,8 +609,7 @@
 
 				<div class="col-lg-6 ftco-animate">
 					<div class="blog-entry">
-						<a class="block-20"
-							style="background-image: url('images/sigef/PAINEL\ DE\ CONTROLO.png');">
+						<a class="block-20" style="background-image: url('images/sigef/PAINEL\ DE\ CONTROLO.png');">
 						</a>
 						<div class="text d-block text-center"
 							style="background: #0a1f44df; backdrop-filter: blur(10px);">
@@ -951,7 +809,7 @@
 		</div>
 
 	</section>
-
+ -->
 	<style>
 		.frco-animate {
 			a {
@@ -1026,7 +884,6 @@
 
 		gtag('config', 'UA-23581568-13');
 	</script>
-
 
 	<!-- Função do slide -->
 
